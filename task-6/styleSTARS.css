@@ -20,5 +20,4 @@ div.star:hover ~ div.star {
     background: url(images/red_star.png);
     background-size: cover;
     cursor: pointer;
-  }
-
+}

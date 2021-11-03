@@ -6,6 +6,7 @@ body {
     font-size: 20px;
     color: rgb(11, 58, 212);
 }
+
 .wrapper:nth-child(1) {
     margin: 80px 300px 0px;
 }
@@ -23,8 +24,8 @@ h2 {
 }
 
 div.wrapper div:first-of-type {
-color: green;
-font-style: inherit;
+    color: green;
+    font-style: inherit;
 }
 
 div.wrapper div:nth-of-type(even) {
