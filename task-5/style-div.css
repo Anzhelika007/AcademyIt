@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    border: none;
+}
+
+header,
+footer {
+    background-color:cadetblue;
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
+    font-family: 'Playfair Display SC', serif;
+    color: darkblue;
+    
+}
+
+h3 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 40px;
+    font-variant: small-caps;
+}
+
+.menu {
+    display: inline-block;
+    background-color:khaki;
+    min-width: 15%;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 45px 20px;
+    box-sizing: border-box;
+}
+
+.menu-li {
+    font-size: 25px;
+    line-height: 35px; 
+}
+
+.content {
+    display: inline-block;
+    background-image: url(images/football.png);
+    background-position: top right;
+    background-repeat: repeat-y;
+    font-size: 30px;
+    padding: 40px;
+    width: 83%;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.photo {
+    width: 350px;
+    float: left;
+    margin: 0 40px 20px 0;
+}
+
