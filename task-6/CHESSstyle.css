@@ -21,7 +21,7 @@ tr:nth-child(odd) td:nth-child(even) {
     background-color:black;
 }
 
-table.CHESS tr:first-of-type,  table.CHESS tr:last-of-type{
+table.CHESS tr:first-of-type td,  table.CHESS tr:last-of-type td{
     background-color: green;
     height: 25px;
     
