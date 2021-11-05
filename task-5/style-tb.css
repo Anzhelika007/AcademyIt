@@ -2,6 +2,10 @@
     margin: 0;
     border: none;   
 }
+table {
+    border-collapse: collapse;
+    height: 100vh;
+}
 
 .header, 
 .footer {
