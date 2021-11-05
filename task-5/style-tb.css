@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    border: none;
+    border: none;   
 }
 
 .header, 
@@ -13,16 +13,19 @@
     color: darkblue;
 }
 
+tr {
+    background-color: khaki;
+}
+
 h3 {
     font-size: 30px;
     padding-bottom: 20px;
 }
 
 .menu {
-    background-color:khaki;
-    min-width: 350px;
-    min-height: 250px;
-    font-size: 20px;
+    float: left;
+    width: 280px;
+    font-size: 18px;
     line-height: 30px;
     padding: 45px 20px;
 }
@@ -33,11 +36,13 @@ h3 {
 } 
 
 .content {
+    background-color: #fff;
     background-image: url(images/football.png);
     background-position: top right;
     background-repeat: repeat-y;
     font-size: 30px;
     padding: 40px;
+    margin-left: 280px;
 }
 
 h2 {
