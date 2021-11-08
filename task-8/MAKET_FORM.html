@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <style>
+        form {
+            font-size: 20px;
+            max-width: 800px;
+            min-width: 320px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ha {}
+
+
+
+        .label {
+            display: block;
+            /* position: absolute;*/
+            max-width: 220px;
+            margin: 20px 0;
+
+        }
+
+        .input {
+            display: inline;
+            position: absolute;
+            margin-left: 225px;
+            width: 100%;
+            left: 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+
+        <p>Для публикации вашей статьи заполните,
+            пожалуйста, следующую форму:</p>
+        <div class='ha'></div>
+        <div class='label'><label for="name">Название статьи:</label>
+            <span class="input"><input id="name" type="text"></span>
+        </div>
+        </div>
+        <div class='label'> <label for="1">Рубрика:</label>
+            <select class="input" id="1" name="kurs" style="width: auto;">
+                <option value="pr">Программирование</option>
+                <option value="pr">Веб-дизайн</option>
+            </select>
+        </div>
+        <div class='label'> <label for="2">Публикация:</label>
+            <div class="input"><input type="radio" name="2">на сайте
+                <input type="radio" name="2">в журнале
+                <input type="radio" name="2">на сайте и в журнале
+            </div>
+        </div>
+        <div class='label'> <Label for="3">Разрешить комментарии:</Label>
+            <div class="input"> <input name="3" type="checkbox"></div>
+        </div>
+        <div class='label'><Label for="4">Текст статьи:</Label>
+            <input name="4" type="text" style="height: 50px; width: 100%;">
+        </div>
+        <div>
+            <input type="submit" style="width: auto">
+        </div>
+    </form>
+
+
+</body>
+
+</html>
