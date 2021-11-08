@@ -49,6 +49,9 @@ h2 {
     margin: 0 40px 20px 0;
 }
 
+p {
+    text-indent: 20px;
+}
 .content {
     background-image: url(images/football.png);
     background-color: #fff;
@@ -95,8 +98,8 @@ h2 {
 @media all and (max-width: 767px) {
     header,
     footer {
-    padding: 30px 0 35px;
-    font-size: 25px;
+        padding: 35px 0 35px;
+        font-size: 25px;
     }
     header {
         display: flex;
@@ -104,13 +107,11 @@ h2 {
         width: 100%;
         justify-content: center;
         align-items: center;
+        z-index: 1;
     }
     header div.hello {
         position:absolute;
     }
-    .menu {
-        display: none; 
-    }   
     .menu-btn {
         display: block;
         position: absolute;
@@ -118,7 +119,6 @@ h2 {
         height: 30px;
         right: 0;
         margin-right: 20px;
-        /*background-color: #c;*/
     }
     .menu-btn span {
         background-color: #fff;
@@ -136,7 +136,6 @@ h2 {
         width: 100%;
         height: 3px;
         right: 0;
-        
     }
     .menu-btn::before {
         top: 0;
@@ -144,11 +143,40 @@ h2 {
     .menu-btn::after {
         bottom: 0;
     }
+    .menu {
+        position: fixed;
+       top: 0;
+       right: 0;
+       width: 100%;
+       height: 100%;
+       background-color: cadetblue;
+       padding: 70px 10px 0 20px ;          
+    }   
+    h3 {
+        font-size: 28px;
+        color: #fff;
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .menu-li {
+        font-size: 24px;
+        line-height: 40px; 
+        list-style-type: none;
+        
+    }
+    br {
+        display: none;
+    }
+
+
+
     .content {
         font-size: 28px;
         max-width: 100%;
         margin-left: 0px;
-        padding: 0px 10px 10px 20px;
+        padding: 70px 10px 10px 20px;
     }
 
 }
