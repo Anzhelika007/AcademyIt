@@ -6,7 +6,7 @@
 .wrapper {
     background-color: khaki;
     overflow: hidden;
-    
+    min-width: 320px;
 }
 
 header,
@@ -52,6 +52,7 @@ h2 {
 p {
     text-indent: 20px;
 }
+
 .content {
     background-image: url(images/football.png);
     background-color: #fff;
@@ -60,6 +61,7 @@ p {
     font-size: 28px;
     margin-left: 290px;
     padding: 0px 20px 10px 20px;
+    text-align: justify;
 }
 
 .clearfix {
@@ -68,20 +70,16 @@ p {
 
 .menu-btn {
     display: none;
-    /*position: relative;
-    width: 40px;
-    height: 40px;*/
-
 }
 
 @media all and (max-width: 950px) {
     header,
     footer {
-    padding: 30px 0 35px;
-    font-size: 30px;
+        padding: 30px 0 35px;
+        font-size: 30px;
     }
     .img {
-    text-align: center;
+        text-align: center;
     }
     .photo {
         float: none;
@@ -127,15 +125,17 @@ p {
         height: 3px;
         right: 0;
         top:13px;
+        transition: all 0.3s ease 0s;
     }
     div.menu-btn:before,
-    .menu-btn:after {
+    div.menu-btn:after {
         content: '';
         background-color: #fff;
         position: absolute;
         width: 100%;
         height: 3px;
         right: 0;
+        transition: all 0.3s ease 0s;
     }
     .menu-btn::before {
         top: 0;
@@ -143,15 +143,32 @@ p {
     .menu-btn::after {
         bottom: 0;
     }
+    div.menu-btn.active span {
+        transform: scale(0);
+    }  
+    .menu-btn.active::before {
+        transform: rotate(45deg);
+        top: 13px;
+    }
+    .menu-btn.active::after {
+        transform: rotate(-45deg);
+        bottom: 14px;
+    }
     .menu {
+        overflow: auto;
         position: fixed;
-       top: 0;
-       right: 0;
-       width: 100%;
-       height: 100%;
-       background-color: cadetblue;
-       padding: 70px 10px 0 20px ;          
-    }   
+        top: -100%;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: cadetblue;
+        padding: 70px 60px 0px 20px;  
+        overflow:auto;   
+        transition: all 0.3s ease 0s; 
+    } 
+    .menu.active {
+        top: 0;
+    }
     h3 {
         font-size: 28px;
         color: #fff;
@@ -163,73 +180,108 @@ p {
     .menu-li {
         font-size: 24px;
         line-height: 40px; 
-        list-style-type: none;
-        
+        list-style-type: none; 
     }
     br {
         display: none;
     }
-
-
-
     .content {
         font-size: 28px;
         max-width: 100%;
         margin-left: 0px;
-        padding: 70px 10px 10px 20px;
+        padding: 70px 20px 10px 20px;
     }
-
+    body.lock {
+        overflow: hidden;
+    }
 }
 
-
-/*@media (min-width: 600px), (max-width: 800px) {
-    .wrapper {
-        min-width: 600px;
-        max-width: 800px;
-        
+@media all and (max-width: 680px) {
+    .hello,
+    footer {
+        font-size:20px;
     }
-
-    header,
-    footer { 
-    padding: 30px 0 35px;
-    font-size: 24px;
-    /*min-height: 600px;
-    max-width: 800px;   
-
+    footer {
+        padding: 15px 0 15px;
     }
+    .content {
+        font-size: 24px;
+     }
+     img {
+         padding-bottom: 20px;
+     }
+}
 
+@media all and (max-width: 570px) {
+    .hello {
+        visibility: hidden;
+    }
+    .hello::before {
+        content: 'Футбол';
+        visibility: visible;
+        display: block;
+        position: absolute;  
+        transform: translate(100%, -25%);
+        font-size: 30px;
+    }
+    h2 {
+        display: none;
+    }
     .photo {
-        width: auto;
-        float: none;
-        /*padding-left: 20px;
-        padding-right: 20px;
-        margin: 0;
+        padding-top: 20px;
+        margin: auto;
     }
+    .content {
+        background-image: none;
+    }
+}
 
+@media all and (max-width: 407px) {
+    .hello::before {
+        content: 'Футбол';
+        transform: translate(100%, 0%);
+    }
     h3 {
-        font-size: 20px;
-        padding: 0px 0 10px 0;
+        display: none;
     }
-
-    h2 { 
-        padding: 10px 0;
-    }
-
-    .menu {
-        max-width: 150px;
-        font-size: 12px;
-        line-height: 30px;
-        padding: 15px 0 40px 40px;
-    }
-
-    .menu-li {
-        font-size: 18px;
-        line-height: 35px; 
-    }
-
     .content {
         font-size: 20px;
-        
     }
-    
-}*/
+}
+
+@media all and (max-width: 360px) {
+    .hello::before {
+        content: 'Футбол';
+        transform: translate(100%, 0%);
+    }
+    footer span {
+        display: none;
+    }
+    .content {
+        padding-left: 20px;
+    }
+    .menu {
+        padding: 70px 0 0px 20px;          
+     } 
+}
+
+@media all and (max-width: 350px) {
+    .hello::before {
+        content: '';
+    }
+    .content h2 {
+        display: block;
+        font-size: 25px;
+        margin: auto;
+    }
+   
+    .photo {
+        padding-top: 0;
+    }
+}
+
+@media all and (max-width: 340px) {
+    .photo {
+        max-width: 250px;
+    }
+}
