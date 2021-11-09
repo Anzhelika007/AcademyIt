@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: -10px;
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(11, 58, 212);
+}
+
+.wrapper {
+    margin: 80px 300px 30px;
+    scroll-behavior:inherit;
+}
+
+h2 {
+    color: black;
+}
+
+div.wrapper div {
+    color: green;
+    font-style: inherit;
+}
+
+div.wrapper div div {
+    color:red;
+    font-style: inherit;
+}
+    
+div.wrapper div div div div {
+    color: blue;
+}
+
+p {
+    margin-top: 20px;
+}
+
+a {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div.wrapper div  div div a {
+    padding-left: 10px;
+    background-image: url(images/extref.png);
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+}
