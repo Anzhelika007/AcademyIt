@@ -1,0 +1,64 @@
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 40px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 30px 50px;
+    margin: 0 25%; 
+    font-size: 25px;
+}
+
+.content__cards:nth-child(1) {
+    font-family:'Lobster', cursive;
+    grid-row: 1;
+}
+
+.content__cards:nth-child(2) {
+    font-family:'Comfortaa', cursive;
+    grid-row: 2;
+}
+
+.content__cards:nth-child(3) {
+    font-family: 'Amatic SC', cursive;
+    font-size: 35px;
+    grid-row: 3;
+}
+
+.content__cards:nth-child(4) {
+    font-family: 'Pacifico', cursive;
+    line-height: 35px;
+    grid-row: 1;
+}
+
+.content__cards:nth-child(5) {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 20px;
+    grid-row: 2;
+}
+
+.content__cards:nth-child(6) {
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-style: italic;
+    line-height: 30px;
+    grid-row: 3;
+}
+
+.content__cards__font {
+    font-family:'Roboto', sans-serif;
+    font-size: 15px;
+    vertical-align:sub;
+    margin-bottom: 10px;
+}
+
+footer {
+    padding: 40px 40px 10px 50px ;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
