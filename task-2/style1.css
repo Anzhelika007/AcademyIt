@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Airfool;
+    src: url("Airfool.otf") format("opentype");
+}
+    
+.content {
+    border: solid 1px #000;
+    width: 240px;
+    height: 100hv;
+}
+
+.card {
+    display: block;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    width: 240px;
+}
+
+img {
+    padding: 10px 0;
+}
+
