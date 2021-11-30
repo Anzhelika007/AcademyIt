@@ -50,7 +50,8 @@ a:active {
     justify-content: space-between;
     align-items: baseline;
     margin: 20px 0px 20px; 
-    width: 100%;   
+    width: 100%; 
+
 }
 a.logo {
     flex-shrink: 3;
@@ -486,4 +487,7 @@ form.contact__form input:nth-of-type(4) {
     .contact__map {
         display: none; 
     }
-}
+    .header__content-arrow {
+        margin: 0 auto 15px;
+        }
+    }
