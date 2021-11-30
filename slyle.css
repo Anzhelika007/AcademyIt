@@ -28,7 +28,7 @@ a:hover {
     text-transform: uppercase;
 }
 footer a:hover {
-    background-color:#191970;;
+    background-color: #191970;;
     color: white;
     padding: 0; 
 }
@@ -95,7 +95,7 @@ li {
     width: 7vw;
     flex-shrink: 10;
 }
-.header__search-input::placeholder{
+.header__search-input::placeholder {
     background-image: url(images/search-icon.png);
     background-repeat: no-repeat;
     background-position: right top;
@@ -197,7 +197,7 @@ li {
     padding-bottom: 15px;
     font-size: 50px;
     text-transform: uppercase;
-    font-weight:bold;
+    font-weight: bold;
     border-bottom: 2px solid #00BFFF;
     text-align: center;   
 }
@@ -225,8 +225,8 @@ li {
     width: 100%;
     font-size: calc(20px + 1.5vw);
     text-transform: uppercase;
-    font-weight:bold;
-    padding-bottom:40px;
+    font-weight: bold;
+    padding-bottom: 40px;
     text-align: start;
 }
 .about__img {
@@ -307,12 +307,12 @@ li {
     margin-top: calc(15px + 7.03vw);
     font-size: calc(25px + 3.9vw);
     text-transform: uppercase;
-    font-weight:bold;
+    font-weight: bold;
 }
 .partner__text {
     margin-top: 50px;
     font-size: 25px;
-    font-weight:500;
+    font-weight: 500;
 }
 .partner__button {
     font-size: 20px;
@@ -351,13 +351,13 @@ li {
 .price__kard-title {
     font-size: 30px;
     text-transform: uppercase;
-    font-weight:bold;
+    font-weight: bold;
     padding-bottom: 1vw;
 }
 .price__kard-price {
     font-size: 40px;
     text-transform: uppercase;
-    font-weight:bold;
+    font-weight: bold;
     padding-bottom: 1vw;
 }
 .price__kard-text {
@@ -378,9 +378,6 @@ li {
     background-color: darkorange;
 }
 /*ШЕСТАЯ СТРАНИЦА*/
-.contact {
-}
-
 .contact__wrapper {
     background-image: url(images/contact-bg.png);
     background-repeat: no-repeat;
