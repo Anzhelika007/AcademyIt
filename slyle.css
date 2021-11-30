@@ -162,6 +162,7 @@ li {
     display: flex;
     flex-direction: row;
     margin-bottom: 15px;
+    margin-left: calc(70px + 3vw);
 }
 .content__arrow-button {
     line-height: 80px;
@@ -218,16 +219,16 @@ li {
     width: 100%;
     padding-right: 10px;
     padding-left: calc(10px + 6vw); 
+    align-content: space-around;
 }
 .about__content h2 {
     width: 100%;
-    width: 50%;
     font-size: calc(20px + 1.5vw);
     text-transform: uppercase;
     font-weight:bold;
     padding-bottom:40px;
     align-content: center;
-    text-align: center;
+    text-align: start;
 }
 .about__img {
     width: 50%;
