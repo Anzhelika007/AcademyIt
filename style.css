@@ -4,7 +4,7 @@
 }
 body {
     font-family: 'Jost', sans-serif;
-    font-size: 20px;
+    font-size: clamp(16px, 1vw, 22px);
     color: #3E424B;
     line-height: 140%;
     width: 100vw;
@@ -27,28 +27,28 @@ h4, h5, button {
     font-weight: 400;
 }
 h1 {
-    font-size: 75px;
+    font-size: clamp(35px, 7.8vw, 75px);
     line-height: 100%;
     color: #BB8C5F;
     padding-bottom: 50px;
 }
 h2 {
-    font-size: 60px;
+    font-size: clamp(20px, 3.25vw, 60px);
     line-height: 100%;
     color: #3E424B;
 }
 h3 {
-    font-size: 50px;
+    font-size: clamp(25px, 5.21vw, 50px);
     line-height: 130%;
     color: #BB8C5F;
 }
 h4 {
-    font-size: 30px;
+    font-size: clamp(20px, 2.6vw, 30px);
     line-height: 115%;
     color:#3E424B;
 }
 h5 {
-    font-size: 25px;
+    font-size: clamp(20px, 2.6vw 25px);
     line-height: 140%;
     color: #FAF6F2;;
 }
@@ -61,9 +61,9 @@ button {
     font-size: 20px;
 }
 .conteiner {
-    max-width: 1230px;
+    max-width: 1350px;
     margin: 0 auto; 
-    padding: 0 10px;
+    padding: 0 20px;
 }
 main {
     background-color: #EEEEEE;
@@ -75,12 +75,11 @@ main {
 header {
     background-color: #050402;
     color: #FAF6F2;
-    width: 100vw;
 }
 .header__wrapper {
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
+    padding-top: max(20px, 2.65vw);
     width: 100%;
 }
 .header__top {
@@ -88,13 +87,13 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    gap: clamp(15px, 3.3vw, 60px);
 }
 .phone {
     font-size: 20px;
     line-height: 150%;
     display: flex;
     flex-direction: column;
-    margin-right: 60px;
 }
 .phone__icon {
     margin: 0 10px 0 0;
@@ -110,7 +109,7 @@ header {
     padding-bottom: 23px;
 }
 .logo {
-    margin: 0 90px 0 90px;
+    margin: 0 40px 0 40px;
 }
 .logo__icon {
 }
@@ -138,24 +137,24 @@ header {
     left: 20px;
 }
 .like {
-    margin-left: 60px;
     padding-bottom: 20px;
 }
 .like__icon {
 }
 .cabinet {
-    margin-left: 60px;
     padding-bottom: 18px;
 }
 .cabinet__icon {
 }
 .line__top {
+    width: 100%; 
+    
 }
 .line__top__icon {
     width: 100%;
 }
 .header_bottom {
-
+    
 }
 .catalog__top {
     line-height: 160%;
@@ -171,7 +170,6 @@ header {
 .catalog__top__icon {
     width: 24px;
     height: 14px;
-    margin-right: 70px;
 }
 .search {
     width: 415px;
@@ -202,6 +200,7 @@ header {
 .menu__link {
     margin: 0 auto;
 }
+/*              */
 .header__content {
     background-image: url(images/bg-head.jpg);
     background-size: cover;
