@@ -269,6 +269,9 @@ header {
 }
 
 /*ВТОРАЯ СТРАНИЦА популятные товары*/
+.goods {
+    width: 100%;
+}
 .goods__wrappe {
     padding-top: 120px;
     display: flex;
@@ -282,7 +285,9 @@ header {
     flex-direction: row;
 }
 .goods__gallery {
+    max-width: 100%;
     display: grid;
+    overflow: hidden;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
@@ -355,15 +360,18 @@ header {
 
 /*каталог группы*/
 .catalog__wrapper {
+    width: 100%;
 }
 .catalog__title {
     text-align: center;
 }
 .catalog__group {
+    width: 100%;
+    overflow: hidden;
     margin: 50px 0 120px;
     display: grid;
     grid-template-columns: 340px 135px 185px 131px 340px;
-    grid-template-rows: repeat(4, 350px);
+    grid-template-rows: repeat(auto-fill, minmax(229px, 350px));
     gap: 20px;
     grid-template-areas: 
     "a1 a1 a2 a2 a2"
@@ -530,10 +538,12 @@ header {
    margin: 0 auto;
 }
 .brands__gallery {
+    max-width: 80%;
+    margin: 0 auto;
     justify-content: center;
     display: grid;
     align-items: center;
-    grid-template-columns: 60px repeat(5, 210px) 60px;
+    grid-template-columns: 60px repeat(5, 11vw) 60px;
     grid-template-rows: 82px 2px 82px;
     gap: 30px;
     grid-template-areas: 
@@ -551,7 +561,8 @@ header {
 }
 .brands__gallery-icon-row {
     grid-area: b13;
-    max-width: 1175px;
+    max-width: 100%;
+
 }
 .brands__gallery-1 {
     grid-area: b1;
@@ -605,7 +616,6 @@ header {
 }
 .shop__article__title {
     font-size: 45px;
-    
 }
 .shop__article__text {
    
@@ -615,11 +625,12 @@ header {
 }
 /*Отзывы*/
 .reviews {
+    width: 100%;
 }
 .reviews__wrapper {
     display: flex;
     flex-direction: column;
-    width: 100%;
+     width: 100%;
 }
 .revierws__title {
     margin-bottom: 100px;
@@ -627,6 +638,8 @@ header {
 .reviers__item {
     display: flex;
     flex-direction: row;
+    max-width: 100%;
+    overflow: hidden;
 }
 .reviers__item_inner {
     background-color:  #050402;
@@ -663,13 +676,8 @@ header {
 }
 /*контакты*/
 .contacts {
+    width: 100%;
   
-}
-.contacts__wrapper {
-    display: flex;
-    justify-content: flex-end;
-    align-content: space-around;
-
 }
 .contacts__wrapper {
     display: flex;
@@ -685,10 +693,10 @@ header {
     color: #3E424B;
     font-weight: 500;
     padding-bottom: 30px;
-    
 }
 .contacts__form {
     padding-bottom: 30px;
+    width: 45%;
 }
 .contacts__label {
     margin: 20px 0 20px;
@@ -707,9 +715,10 @@ header {
 }
 .contacts__bg {
     margin-bottom: 200px;
+    width: 50vw;
 }
 .contacts__bg-img {
-    min-width: 50vw;
+    width: 50vw;
 }
 
 footer {
@@ -753,6 +762,25 @@ footer {
 }
 .footer__icon {
     align-items: flex-end;
+}
+
+/*  404*/
+.page404 {
+    min-height: 69%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+.page404__content__title {
+   padding: 18.3vw 0 20px 0;
+}
+.page404__content__text {
+    color: #3E424B;
+    padding-bottom: 50px;
+}
+.page404__img {
+    max-width: 100%;
 }
 
 @media all and (max-width: 990px) {
