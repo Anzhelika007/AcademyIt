@@ -816,3 +816,15 @@ footer {
         margin: 0 auto;
     }
 }
+
+@media all and (max-width: 500px) {
+    .search {
+        display: none;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .cabinet {
+        display: none;
+    }
+}
