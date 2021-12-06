@@ -332,7 +332,6 @@ ul.slick-dots{
 .goods__gallery {
     max-width: 100%;
     display: grid;
-    overflow: hidden;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
@@ -344,7 +343,7 @@ ul.slick-dots{
     position: relative;
 }
 .goods__gallery__kard:hover {
-    transform: scale(1.1, 1.15);
+    transform: scale(1.05, 1.10);
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     z-index: 1;
 }
@@ -363,7 +362,7 @@ ul.slick-dots{
 .checkbox-style {
     width: 20px;
     height: 18px;
-    background-image: url(images/icon-heart.svg);
+    background-image: url(../images/icon-heart.svg);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -371,9 +370,44 @@ ul.slick-dots{
     left: calc((290px - 35px) - 20px / 2);
 }
 .goods__gallery__kard-input:checked + .checkbox-style {/*меняем*/
-    background-image: url(images/icon-heart-yes.svg);
+    background-image: url(../images/icon-heart-yes.svg);
 }
-.goods__gallery__kards-label {
+.goods__gallery__kards-label{
+    display: none;
+}
+.goods__gallery__kards-not__available{
+    display: none;
+}
+.goods__gallery__hover-text {
+    padding: 18px 21px;
+    background-color: rgba(255, 255, 255, .9);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    display: inline-block;
+    position: absolute;
+    top: 30%;
+    left: 18%;
+    
+    opacity: 0;
+    transition: all .3s;
+}
+.goods__gallery__kard:hover .goods__gallery__hover-text{
+    opacity: 1;
+    color: #2F3035;
+    
+}
+.goods__gallery__kard.googs__not__available .goods__gallery__kards-price{
+    display: none;
+}
+.goods__gallery__kard.googs__not__available .goods__gallery__kards-not__available{
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.goods__gallery__kard.goods__new .goods__gallery__kards-label {
+    display: block;
     width: 85px;
     height: 29px;
     border: 1px solid #BB8C5F;
@@ -719,7 +753,6 @@ ul.slick-dots{
 /*контакты*/
 .contacts {
     width: 100%;
-  
 }
 .contacts__wrapper {
     display: flex;

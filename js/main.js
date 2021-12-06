@@ -2,7 +2,7 @@ $(function () {
 
     $('.header__slaider').slick({
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 500,
         infinite: true,
         dots: true,
         prevArrow: '<button class="header__slaider-btn header__slaider-btnprev"><img src="images/icon-top-slaider.svg"></button>',
