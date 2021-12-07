@@ -455,14 +455,17 @@ ul.slick-dots{
     "a9 a10 a10 a11 a11"
     ;
 }
-.catalog__group a >div {
-    background: #F5F5F5;
+.catalog__group > a{
     position: relative;
+    background:  #F5F5F5;
+    max-height: 350px;
 }
-.catalog__group div:hover {
+
+.catalog__group a:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     z-index: 1;
+    color: #3E424B;;
 }
 .catalog__group-img {
     
@@ -475,56 +478,75 @@ ul.slick-dots{
     left: 50px;
     top: 40px;
 }
-.catalog__group__item-2 div> img,
-.catalog__group__item-5 div> img
- {
-    mix-blend-mode: darken;
-}
 .catalog__group__item-1 {
     grid-area: a1;
-    
+}
+.catalog__group__item-1 div img{
+    padding-left: 130px;
 }
 .catalog__group__item-2 {
     grid-area: a2;
-    
 }
-.catalog__group__item-2 img {
-    box-shadow: inset 0 0 15px 15px #F5F5F5;
+.catalog__group__item-2 div img{
+    padding: 79px 0 0 83px;
+    mix-blend-mode: darken;
 }
 .catalog__group__item-3 {
     grid-area: a3;
-   
+}
+.catalog__group__item-3 div img{
+    padding: 91px 0 0 42px;
 }
 .catalog__group__item-4 {
     grid-area: a4;
-    
+}
+.catalog__group__item-4 div img{
+    padding-left: 142px;
 }
 .catalog__group__item-5 {
     grid-area: a5;
-    
+}
+.catalog__group__item-5 div img{
+    padding: 84px 0 0 16px;
+    mix-blend-mode: darken;
 }
 .catalog__group__item-6 {
     grid-area: a6;
-    
+}
+.catalog__group__item-6 div img{
+    padding: 83px 0 0 27px;
 }
 .catalog__group__item-7 {
     grid-area: a7;
-    
+}
+.catalog__group__item-7 div img{
+    padding: 60px 0 0 16px;
 }
 .catalog__group__item-8 {
     grid-area: a8;
 }
+.catalog__group__item-8 div img{
+    padding: 60px 0 0 15px;
+}
 .catalog__group__item-9 {
     grid-area: a9;
 }
+.catalog__group__item-9 div img{
+    padding: 97px 0 0 31px;
+}
 .catalog__group__item-10 {
     grid-area: a10;
-    
+}
+.catalog__group__item-10 div img{
+    padding: 97px 0 0 32px;
 }
 .catalog__group__item-11 {
-    grid-area: a11;
-    
+    grid-area: a11; 
 } 
+.catalog__group__item-11 div img{
+    padding-left:29px;
+    mix-blend-mode: darken;
+}
 /*СЛАЙД */
 .slaid {
 }
