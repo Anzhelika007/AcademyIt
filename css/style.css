@@ -314,7 +314,6 @@ ul.slick-dots{
     background-color:  #524336;
     color: #FAF6F2;
 }
-
  /*ВТОРАЯ СТРАНИЦА популятные товары*/
  .goods {
     width: 100%;
@@ -433,7 +432,6 @@ ul.slick-dots{
 .goods__gallery-button {
     margin: 50px auto;
 }
-
 /*каталог группы*/
 .catalog__wrapper {
     width: 100%;
@@ -466,9 +464,6 @@ ul.slick-dots{
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     z-index: 1;
     color: #3E424B;;
-}
-.catalog__group-img {
-    
 }
 .catalog__group-text {
     position: absolute;
@@ -576,14 +571,11 @@ ul.slick-dots{
     line-height: 150%;
     color: #BB8C5F;
 }
-.left__link__slaid {
+.slaid__link__left {
     top: 390px;
     left: 340px;
 }
-.right__link__slaid {
-    top: 390px;
-    left: 53px;
-}
+
 .slaid__line-left {
     position: absolute;
     top: 420px;
@@ -603,8 +595,9 @@ ul.slick-dots{
     line-height: 130%;
     color: #FAF6F2;
 }
-.slaid__link-right {
-    margin: 40px 0 0 50px;
+.slaid__link__right {
+    top: 390px;
+    left: 53px;
 }
 .slaid__line-right {
     position: absolute;
