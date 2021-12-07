@@ -260,7 +260,6 @@ header {
     padding: 0;
     z-index: 5;
 }   
-
 .header__slaider-btnprev{
    right: 150px;
    top:30%;
@@ -378,7 +377,11 @@ ul.slick-dots{
 .goods__gallery__kards-not__available{
     display: none;
 }
+.goods__gallery__hover-text {
+    
+}
 .goods__gallery__kard:hover .goods__gallery__hover-text{
+    display: block;
     opacity: 1;
     color: #2F3035;
     padding: 18px 21px;
@@ -570,6 +573,7 @@ ul.slick-dots{
     font-size: 20px;
     line-height: 150%;
     color: #BB8C5F;
+    font-size: 25px;
 }
 .slaid__link__left {
     top: 390px;
@@ -580,6 +584,8 @@ ul.slick-dots{
     position: absolute;
     top: 420px;
     left: 337px;
+    padding-top: 10px;
+    min-width: 225px;
 }
 .slaid__item-right {
     background-image: url(../images/bg-slaid1.jpg);
@@ -603,6 +609,8 @@ ul.slick-dots{
     position: absolute;
     top: 420px;
     left:50px;
+    padding-top: 10px;
+    min-width: 225px;
 }
 /*БРЕНДЫ*/
 .brands {
@@ -621,36 +629,48 @@ ul.slick-dots{
     color: #3E424B;
 }
 .brands__gallery__wrapper{
-   width: 80%;
+   position: relative;
    margin: 0 auto;
 }
 .brands__gallery {
-    max-width: 80%;
+    width: 1135px;
     margin: 0 auto;
-    justify-content: center;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 60px repeat(5, 11vw) 60px;
-    grid-template-rows: 82px 2px 82px;
-    gap: 30px;
-    grid-template-areas: 
-    "b11 b1 b2 b3 b4 b5 b12"
-    "b11 b13 b13 b13 b13 b13 b12"
-    "b11 b6 b7 b8 b9 b10 b12"
-    ;
+    display: flex;
+    position: relative;
 }
-.brands__gallery-icon-left {
+.brands__gallery > div {
+    width: 1300px;
+}
+.brands__gallery-btn {
+    position: absolute;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    margin: 0;
+    padding: 0;
+}
+.brands__gallery-btnprev{
+    top: 50%;
+    left: -80px;
+}
+.brands__gallery-btnnext{
+    top: 50%;
+    right: -60px;
+}
+
+/* .brands__gallery-icon-left {
     grid-area: b11;
 }
 .brands__gallery-icon-right {
     grid-area: b12;
     padding-left: 10px;
-}
-.brands__gallery-icon-row {
+} */
+/* .brands__gallery-icon-row {
     grid-area: b13;
     max-width: 100%;
-}
-.brands__gallery-1 {
+} */
+/* .brands__gallery-1 {
     grid-area: b1;
 }
 .brands__gallery-2 {
@@ -679,7 +699,7 @@ ul.slick-dots{
 }
 .brands__gallery-10 {
     grid-area: b10;
-}
+} */
 /*0 МАГАЗИНЕ*/
 .shop {
     /*position: relative;*/
