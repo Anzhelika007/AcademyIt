@@ -269,7 +269,7 @@ header {
     right: 150px;
     top:65%;
  }
-ul.slick-dots{
+ .header__slaider ul.slick-dots{
     position: absolute;
     top: 37%;
     right: 160px;
@@ -658,48 +658,6 @@ ul.slick-dots{
     top: 50%;
     right: -60px;
 }
-
-/* .brands__gallery-icon-left {
-    grid-area: b11;
-}
-.brands__gallery-icon-right {
-    grid-area: b12;
-    padding-left: 10px;
-} */
-/* .brands__gallery-icon-row {
-    grid-area: b13;
-    max-width: 100%;
-} */
-/* .brands__gallery-1 {
-    grid-area: b1;
-}
-.brands__gallery-2 {
-    grid-area: b2;
-}
-.brands__gallery-3 {
-    grid-area: b3;
-}
-.brands__gallery-4 {
-    grid-area: b4;
-}
-.brands__gallery-5 {
-    grid-area: b5;
-}
-.brands__gallery-6 {
-    grid-area: b6;
-}
-.brands__gallery-7 {
-    grid-area: b7;
-}
-.brands__gallery-8 {
-    grid-area: b8;
-}
-.brands__gallery-9 {
-    grid-area: b9;
-}
-.brands__gallery-10 {
-    grid-area: b10;
-} */
 /*0 МАГАЗИНЕ*/
 .shop {
     /*position: relative;*/
@@ -735,49 +693,96 @@ ul.slick-dots{
 .reviews__wrapper {
     display: flex;
     flex-direction: column;
-     width: 100%;
+    width: 100%;
 }
 .revierws__title {
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
-.reviers__item {
+.reviers__slider {
+    margin: 50px auto 0;
+    max-width: 90%;
+    max-height: 470px;
+}
+.reviers__slider_inner {
+    background-color: #050402;
+    padding: 70px 10px 50px 20px;
+    width: 600px;
+    height: 310px;
+    position: relative;
+    line-height: 20px;
+    opacity: 0.4;
+    transition: all .3s;
+    transform: scale(.8);
+    border-radius: 10px;
+}
+.reviers__slider_inner.slick-center {
+    opacity: 1;
+    transform: scale(1);
+    margin-top:40px;
+    color: #FAF6F2;
+} 
+.reviers__slider_photo {
+    position: absolute;
+    top:20px;
+    left: 50px;
+    z-index: 10;
+    transform: translate(50%, -50%);
+    z-index: 999;
+}
+.reviers__slider_botton {
+    line-height: 28px;
+    text-align: start;
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+}
+.reviers__slider_botton::before{
+    content: url(../images/icon-insta.png);
+    padding-right: 10px;
+}
+.reviers__slider-btn {
+    position: absolute;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    margin: 0;
+    padding: 0;
+}
+.reviers__slider-btnprev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 5;
+}
+.reviers__slider-btnnext {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+}
+.reviers__slider .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.reviers__slider .slick-dots li{
+    padding-left: 10px;
+}
+.reviers__sliderul slick-dots button {
     display: flex;
     flex-direction: row;
-    max-width: 100%;
-    overflow: hidden;
+    padding: 0;
+    font-size: 0;
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #524336;
+    background-color:transparent;
 }
-.reviers__item_inner {
-    background-color:  #050402;
-    min-width: 300px;
-    max-width: 600px;
-    position: relative;
-    max-width: 100%;
-}
-.reviers__item_photo {
-    position: absolute;
-    transform: translate(50%, -50%);
-}
-.reviers__item_text {
-    padding: 50px 0 30px 50px;
-}
-.reviers__item_botton {
-}
-.reviers__item__icon {
-}
-.reviers__gallery-icon-left {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-}
-.reviers__gallery-icon-right {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-}
-.reviews__slaider {
-    margin: 60px auto;
-}
-.reviews__slaider-img {
+.slick-active button {
+    background-color: #BB8C5F;
+   
 }
 /*контакты*/
 .contacts {
@@ -823,7 +828,6 @@ ul.slick-dots{
 .contacts__bg-img {
     width: 50vw;
 }
-
 footer {
     background-color: #050402;
 }

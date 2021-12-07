@@ -21,24 +21,19 @@ $(function () {
     });
 
 
-
-
-    $('.search__tabs-item').on('click', function (e) {
-        e.preventDefault();
-
-        $('.tab').removeClass('tab--active');
-        $('.tabs-content').removeClass('tabs-content--active');
-
-        $(this).addClass('tab--active');
-        $($(this).attr('href')).addClass('tabs-content--active')
+    $('.reviers__slider').slick({
+        autoplay: false,
+        autoplaySpeed: 500,
+        slidesToShow: 3,
+        infinite: true,
+        dots: true,
+        centerMode: true,
+        viriableWiddth: true,
+        adaptiveHeight: true,
+        rows: 1,
+        prevArrow: '<button class="reviers__slider-btn reviers__slider-btnprev"><img src="images/icon-brand-left.png"></button>',
+        nextArrow: '<button class="reviers__slider-btn reviers__slider-btnnext"><img src="images/icon-brand-right.png"></button>',
     });
-
-
-    $('.product-item__favorite').on('click', function () {
-        $('.product-item__favorite').toggleClass('product-item__favorite--active')
-    });
-
-    $('.product-slider').slick({});
 
 
 });
