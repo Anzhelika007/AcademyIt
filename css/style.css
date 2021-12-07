@@ -67,14 +67,6 @@ button {
     color: #BB8C5F;
     font-size: 20px;
 }
-button:hover {
-    transform: scale(1.1);
-    transition: all .3s;
-}
-button:active {
-    background-color: #bb8b5f81;
-    transition: all .3s;
-}
 .conteiner {
     max-width: 1350px;
     margin: 0 auto; 
@@ -259,12 +251,12 @@ header {
     margin: 0;
     padding: 0;
     z-index: 5;
+    cursor: pointer;
 }   
 .header__slaider-btnprev{
    right: 150px;
    top:30%;
 }
-
 .header__slaider-btnnext{
     right: 150px;
     top:65%;
@@ -282,11 +274,12 @@ header {
     height: 16px;
     border: 2px solid #524336;
     background-color:transparent;
+    cursor: pointer;
 }
 .slick-active button {
-    background-color: #BB8C5F;
-   
-}
+    background-color:transparent;
+
+} 
 .slick-tract{
     transform: none;
     transition: none;
@@ -313,6 +306,15 @@ header {
     background-color:  #524336;
     color: #FAF6F2;
 }
+.header__slaider__button:hover {
+    transform: scale(1.1);
+    transition: all .3s;
+}
+.header__slaider__button:active {
+    background-color: #bb8b5f81;
+    transition: all .3s;
+}
+
  /*ВТОРАЯ СТРАНИЦА популятные товары*/
  .goods {
     width: 100%;
@@ -435,6 +437,16 @@ header {
 .goods__gallery-button {
     margin: 50px auto;
 }
+
+.goods__gallery-button:hover {
+    transform: scale(1.1);
+    transition: all .3s;
+}
+.goods__gallery-button:active {
+    background-color: #bb8b5f81;
+    transition: all .3s;
+}
+
 /*каталог группы*/
 .catalog__wrapper {
     width: 100%;
@@ -649,6 +661,7 @@ header {
     width: 40px;
     margin: 0;
     padding: 0;
+    cursor: pointer;
 }
 .brands__gallery-btnprev{
     top: 50%;
@@ -686,6 +699,15 @@ header {
 .shop__button {
     margin-top: 30px;
 }
+.shop__button:hover {
+    transform: scale(1.1);
+    transition: all .3s;
+}
+.shop__button:active {
+    background-color: #bb8b5f81;
+    transition: all .3s;
+}
+
 /*Отзывы*/
 .reviews {
     width: 100%;
@@ -748,6 +770,7 @@ header {
     width: 40px;
     margin: 0;
     padding: 0;
+    cursor: pointer;
 }
 .reviers__slider-btnprev {
     position: absolute;
@@ -764,10 +787,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    padding-top: 20px;
+    cursor: pointer;
 }
 .reviers__slider .slick-dots li{
     padding-left: 10px;
+
 }
 .reviers__sliderul slick-dots button {
     display: flex;
@@ -821,6 +846,14 @@ header {
 }
 .contacts__button {
     line-height: 150%;
+}
+.contacts__button:hover{
+    transform: scale(1.1);
+    transition: all .5s;
+}
+.contacts__button:active {
+    background-color: #bb8b5f81;
+    transition: all .5s;
 }
 .contacts__bg {
     width: 50vw;
