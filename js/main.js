@@ -2,7 +2,7 @@ $(function () {
 
     $('.header__slaider').slick({
         autoplay: true,
-        autoplaySpeed: 500,
+        autoplaySpeed: 2000,
         infinite: true,
         dots: true,
         prevArrow: '<button class="header__slaider-btn header__slaider-btnprev"><img src="images/icon-top-slaider.svg"></button>',
@@ -14,7 +14,7 @@ $(function () {
         autoplay: true,
         rows: 2,
         slidesToShow: 5,
-        autoplaySpeed: 500,
+        autoplaySpeed: 1000,
         infinite: true,
         prevArrow: '<button class="brands__gallery-btn brands__gallery-btnprev"><img src="images/icon-brand-left.png"></button>',
         nextArrow: '<button class="brands__gallery-btn brands__gallery-btnnext"><img src="images/icon-brand-right.png"></button>',
@@ -22,11 +22,11 @@ $(function () {
 
 
     $('.reviers__slider').slick({
-        autoplay: false,
-        autoplaySpeed: 500,
+        autoplay: true,
+        autoplaySpeed: 1000,
         slidesToShow: 3,
         infinite: true,
-        dots: true,
+        dots: false,
         centerMode: true,
         viriableWiddth: true,
         adaptiveHeight: true,

@@ -732,6 +732,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 0 auto;
 }
 .revierws__title {
     margin-bottom: 30px;
@@ -740,6 +741,7 @@ header {
     margin: 50px auto 0;
     max-width: 90%;
     max-height: 470px;
+    position: absolute;
 }
 .reviers__slider_inner {
     background-color: #050402;
