@@ -1,0 +1,132 @@
+.address {
+}
+.addres__wrapper {
+    display: flex;
+    flex-direction: column; 
+    color: #3E424B;
+    gap: 50px;
+    padding-bottom: 30px;
+}
+.address__title {
+    padding: 30px 0 40px;
+}
+.address__info {
+    
+}
+.addreee__info-title {
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+.address__info__wrapper {
+    display: flex;
+    flex-direction: row;
+    
+}
+.address__info-block {
+    width: 65%;
+    background: #F5F5F5;
+    margin-right: 20px;
+    padding: 30px 40px 50px 50px;
+}
+a.address__info-tel {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 90px;
+}
+.address__info-skype {
+    display: block;
+    margin-bottom: 20px;
+}
+.address__info-service {
+    width: 34%;
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: space-between;
+}
+p strong {
+    margin-bottom: 20px;
+}
+.address__info-photo {
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+.address__info-photo-img {
+}
+.address__info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.address__info-text p:last-child:before{
+    content: " ";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 45%;
+    background-color: brown;
+    margin-right: 5px;
+}
+
+.phone {
+}  
+.phone__icon {
+}
+.call {
+}
+.email {
+}
+.email__icon {
+}
+.address__manager {
+}
+.address__manager__card {
+    padding: 20px;
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 395px;
+}
+.address__manager__card strong {
+    font-size: 17px;
+}
+.address__manager__card > span {
+    display: inline-block;
+}
+.address__manager-photo {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.address__manager-photo .call a{
+    font-size: 14px;
+    padding-bottom: 0 0 30px 0;
+}
+
+.address__manager__card p {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.address__manager__card p span:last-child::before{
+    content: " ";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 45%;
+    background-color: brown;
+    margin-right: 5px;
+}
+.address__manager__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 65%;
+    gap: 20px;
+}
