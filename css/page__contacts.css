@@ -5,10 +5,10 @@
     flex-direction: column; 
     color: #3E424B;
     gap: 50px;
-    padding-bottom: 30px;
+    padding-top: 50px;
 }
 .address__title {
-    padding: 30px 0 40px;
+
 }
 .address__info {
     
@@ -21,13 +21,15 @@
 .address__info__wrapper {
     display: flex;
     flex-direction: row;
-    
 }
 .address__info-block {
     width: 65%;
     background: #F5F5F5;
     margin-right: 20px;
     padding: 30px 40px 50px 50px;
+}
+.address__info-block p:last-child{
+    padding-top: 20px;
 }
 a.address__info-tel {
     font-weight: bold;
@@ -54,7 +56,7 @@ p strong {
     flex-direction: row;
     gap: 17px;
     justify-content: flex-start;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .address__info-photo-img {
 }
@@ -84,6 +86,7 @@ p strong {
 .email__icon {
 }
 .address__manager {
+     padding-bottom: 40px;
 }
 .address__manager__card {
     padding: 20px;
@@ -92,6 +95,7 @@ p strong {
     flex-direction: column;
     gap: 10px;
     max-width: 395px;
+    
 }
 .address__manager__card strong {
     font-size: 17px;
@@ -120,6 +124,15 @@ p strong {
     width: 10px;
     height: 10px;
     border-radius: 45%;
+    background-color: green;
+    margin-right: 5px;
+}
+.address__manager__card:nth-child(2) p span:last-child::before{
+    content: " ";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 45%;
     background-color: brown;
     margin-right: 5px;
 }
@@ -129,4 +142,5 @@ p strong {
     flex-wrap: wrap;
     width: 65%;
     gap: 20px;
+    justify-content: space-between;
 }
