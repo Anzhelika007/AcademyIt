@@ -1,0 +1,55 @@
+.services {
+}
+
+.services__title {
+    color:#3E424B;
+    padding-top: 30px;
+}
+.services__wrapper {
+}
+ 
+
+.services__prise {
+    margin: 50px auto 50px;
+}
+
+details > summary {
+    list-style: none; 
+    color: #BB8C5F;
+    background-color:#3E424B;
+    line-height: 60px;
+    font-size: 30px;
+    position: relative;
+    padding-left: 30px;
+}
+.servises__price-btn::after{
+    content: "▼";
+    color: #BB8C5F;
+    position: absolute;
+    top: 50%;
+    right: 20px; 
+    transform: translateY(-50%);
+    
+}
+ul>li {
+    border-bottom: #3E424B 1px solid;
+    line-height: 50px;
+    padding:0 20px; 
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+
+}
+.servises__price-text {
+    font-size: 25px;
+    padding-bottom: 50px;
+}
+.servises__price-item {
+    margin-bottom: 20px;
+}
+.servises__price-title {
+}
+.servises__price-btn {
+}
+.servises__price-info {
+}
