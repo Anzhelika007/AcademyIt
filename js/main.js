@@ -22,7 +22,7 @@ $(function () {
 
 
     $('.reviers__slider').slick({
-        autoplay: true,
+        /*  autoplay: true, */
         autoplaySpeed: 1000,
         slidesToShow: 3,
         infinite: true,
