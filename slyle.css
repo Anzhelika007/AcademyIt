@@ -22,9 +22,7 @@ a {
     cursor: pointer;
 }
 a:hover {
-    background-color: red;
     color: white;
-    padding: 1em 1.5em;
     text-transform: uppercase;
 }
 footer a:hover {
@@ -32,9 +30,7 @@ footer a:hover {
     color: white;
     padding: 0; 
 }
-a:active {
-    background-color: black;
-}
+
 /*ПЕРВАЯ СТРАНИЦА*/
 .header {
     color: #fff;
@@ -51,7 +47,6 @@ a:active {
     align-items: baseline;
     margin: 20px 0px 20px; 
     width: 100%; 
-
 }
 a.logo {
     flex-shrink: 3;
@@ -154,7 +149,7 @@ li {
     margin-top: 70px;
     margin-bottom: 30px;
 }
-.header__content-link {
+.header__content-link > button {
     padding: 15px 50px;
     background-color: #191970;
     border-radius: 10px;
