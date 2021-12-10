@@ -278,7 +278,6 @@ header {
 }
 .slick-active button {
     background-color:transparent;
-
 } 
 .slick-tract{
     transform: none;
@@ -324,37 +323,37 @@ header {
     flex-direction: column;
     justify-content: space-between;
 }
-.goods__title {
+.goods__tab {
     padding-bottom: 45px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 50px;
+    color: #3E424B;
 }
-.goods__gallery {
-    display: none; 
+
+.goods__tab__iner.tab--active {
+    border-bottom: 2px solid #BB8C5F;
 }
-.goods__gallery:target{
+.tab__content{
+    display: none;
+}
+.tab__content.tab__item--active{
     display: block;
-    max-width: 100%;
+}
+.goods__conteiner{
+    width: 1220px;
+}
+.goods__slider {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-.goods__gallery::before {
-    content: " ";
-    position: absolute;
-    height: 100px;
-    width: 25%;
-    top:-100px;
-}
-.goods__gallery:nth-child(1)::before{
-    left: 0;
-    background-color:#524336;
-
-}
 .goods__gallery__kard {
     max-width: 290px;
-    min-height: 385px;
+    height: 420px;
     background: #F5F5F5;
     padding: 15px 0 30px;
     position: relative;
@@ -419,8 +418,8 @@ header {
 .goods__gallery__kard.googs__not__available .goods__gallery__kards-not__available{
     display: block;
     text-align: center;
-    padding-top: 15px;
-    font-size: 25px;
+    padding-top: 10px;
+    font-size: 20px;
     font-weight: bold;
 }
 .goods__gallery__kard.goods__new .goods__gallery__kards-label {
@@ -461,6 +460,9 @@ header {
 .goods__gallery-button:active {
     background-color: #bb8b5f81;
     transition: all .3s;
+}
+.goods__title__link.goods__title--activ{
+    border-bottom: 2px solid #BB8C5F;
 }
 
 /*каталог группы*/

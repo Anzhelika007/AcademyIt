@@ -20,6 +20,15 @@ $(function () {
         nextArrow: '<button class="brands__gallery-btn brands__gallery-btnnext"><img src="images/icon-brand-right.png"></button>',
     });
 
+    $('.tab').on('click', function (e) {
+        e.preventDefault();
+
+        $('.tab').removeClass('tab--active');
+        $('.tab__item').removeClass('tab__item--active');
+
+        $(this).addClass('tab--active');
+        $($(this).attr('href')).addClass('tab__item--active');
+    });
 
     $('.reviers__slider').slick({
         /*  autoplay: true, */
@@ -35,5 +44,10 @@ $(function () {
         nextArrow: '<button class="reviers__slider-btn reviers__slider-btnnext"><img src="images/icon-brand-right.png"></button>',
     });
 
-
+    /*  $('.goods__slider').slick({
+         slidesToShow: 4,
+         slidesToScroll: 1,
+         rows: 2,
+     });
+  */
 });
