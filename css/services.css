@@ -31,7 +31,7 @@ details > summary {
     transform: translateY(-50%);
     
 }
-ul>li {
+.servicesul>li {
     border-bottom: #3E424B 1px solid;
     line-height: 50px;
     padding:0 20px; 

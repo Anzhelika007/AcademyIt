@@ -31,7 +31,6 @@ $(function () {
     });
 
     $('.reviers__slider').slick({
-        /*  autoplay: true, */
         autoplaySpeed: 1000,
         slidesToShow: 3,
         infinite: true,
@@ -44,10 +43,5 @@ $(function () {
         nextArrow: '<button class="reviers__slider-btn reviers__slider-btnnext"><img src="images/icon-brand-right.png"></button>',
     });
 
-    /*  $('.goods__slider').slick({
-         slidesToShow: 4,
-         slidesToScroll: 1,
-         rows: 2,
-     });
-  */
+
 });

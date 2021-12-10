@@ -352,7 +352,7 @@ header {
     gap: 20px;
 }
 .goods__gallery__kard {
-    max-width: 290px;
+    width: 290px;
     height: 420px;
     background: #F5F5F5;
     padding: 15px 0 30px;
@@ -449,8 +449,9 @@ header {
     line-height: 130%;
     color: #BB8C5F;
 }
-.goods__gallery-button {
+a .goods__gallery-button {
     margin: 50px auto;
+    align-self: center;
 }
 
 .goods__gallery-button:hover {
@@ -927,7 +928,31 @@ footer {
 .footer__icon {
     align-items: flex-end;
 }
-
+/*ХЛЕБНЫЕ КРОШКИ*/
+.breadcrumbs {
+    margin: 50px 0 30px;
+}
+.breadcrumbs__list {
+}
+.breadcrumbs__list-item {
+    display: inline-block;
+    padding-right: 20px;
+    margin-right: 10px;
+    position: relative;
+    color: #D0D0D0;
+}
+.breadcrumbs__list-item::after {
+    content: "/";
+    position: absolute;
+    right: 0;
+    color: #D0D0D0;
+}
+.breadcrumbs__list-item:last-child::after {
+    display: none;
+}
+.breadcrumbs__list-item span{
+    color: #636B78;
+}
 /*  404*/
 .page404 {
     min-height: 69%;
@@ -946,6 +971,7 @@ footer {
 .page404__img {
     max-width: 100%;
 }
+
 
 @media all and (max-width: 990px) {
     .email a > span {

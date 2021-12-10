@@ -16,21 +16,22 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
-    margin: 0 auto;
-    padding-bottom: 50px;
+    margin: 0 auto 100px;
+    
 }
 .promo__kard {
     max-width: 390px;
-    max-height: 500px;
+    max-height: 520px;
     display: flex;
     flex-direction: column;
     background: #F5F5F5;
+    position: relative;
+    padding-bottom: 90px;
 }
 .promo__kard:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     z-index: 1;
-
 }
 
 .goods__kard__img {
@@ -49,6 +50,19 @@ body {
 }
 .promo__kard__button {
     height: 50px;
-    margin: 0 auto 40px;
-    align-self: flex-end
+    align-self: flex-end;
+    cursor:pointer;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.promo__kard__button:hover{
+    color: #FAF6F2;
+    background: #BB8C5F;
+    cursor: pointer;}
+.promo__kard__button:active{
+    color: #FAF6F2;
+    background: #524336;
+    cursor: pointer;
 }

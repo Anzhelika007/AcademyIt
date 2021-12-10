@@ -1,3 +1,11 @@
+.about{
+    position: relative;
+}
+.breadcrumbs{
+    position: absolute;
+    left: 250px;
+    z-index: 1;
+}
 .about__photo{
     background-image: url(../images/bg-about-header.png);
     width: 100%;

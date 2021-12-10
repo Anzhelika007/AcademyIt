@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Jost&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="header__wrapper conteiner">
+            <div class="header__top">
+                <div class="phone">
+                    <a href="tel:+375290000000"><img class="phone__icon" src="images/icon-phone.png" alt="call to us"> +
+                        375 29 000-00-00</a>
+                    <div class="call">
+                        <a href="viber://chat?number=%2B375290000000">Viber</a>
+                        <a href="https://api.whatsapp.com/send?phone=">Whats App</a>
+                        <a href="https://t.me/Lika_T007">Telegram</a>
+                    </div>
+                </div>
+                <div class="email">
+                    <a href="mailto:Mr.Margiela@gmail.com"><img class="email__icon" src="images/icon-mail.png"
+                            alt="Напишите нам"> <span>Mr.Mar@gmail.com</span></a>
+                </div>
+                <div class="logo">
+                    <a href="index.html"> <img class="logo__icon" src="images/logo.png" alt="Логотип"></a>
+                </div>
+                <div class="buyer"><a class="buyer__link" href="404.html">
+                        <div class="basket__sum">280.85 BYN</div>
+                        <div class="basket">
+                            <img class="basket__icon" src="images/icon-basket.png" alt="Корзина">
+                    </a>
+                    <div class="basket__icon-text">2</div>
+                </div>
+            </div>
+            <div class="like">
+                <a href="404.html"><img class="like__icon" src="images/icon-like.png" alt="Понравившиеся товары"></a>
+            </div>
+            <div class="cabinet">
+                <a href="404.html"><img class="cabinet__icon" src="images/icon-cabinet.png" alt="Личный кабинет"></a>
+            </div>
+        </div>
+
+        <div class="line__top"> </div>
+
+        <div class="header_bottom">
+            <img class="line__top__icon" src="images/line.png" alt="Нижний блок меню">
+        </div>
+        <div class="catalog__top">
+            <div class="catalog__top__wrapper">
+                <h5 class="catalog__top__text"><a class="catalog__top__link" href="#">Каталог</a></h5>
+                <h2 class="catalog__top__menu">Mеню</h2>
+                <a class="catalog__top__link" href="#"><img class="catalog__top__icon" src="images/icon-catalog.png"
+                        alt="Каталог"></a>
+                <div class="search">
+                    <img class="search__icon" src="images/icon-search.png" alt="Поиск">
+                    <input class="search__input" type="search" placeholder="Поиск">
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li><a class="menu__link" href="promo_codes.html">Промокоды</a></li>
+                        <li><a class="menu__link" href="services.html">Услуги</a></li>
+                        <li><a class="menu__link" href="help.html">Помощь</a></li>
+                        <li><a class="menu__link" href="about.html">О нас</a></li>
+                        <li><a class="menu__link" href="page__contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="breadcrumbs">
+            <ul class="breadcrumbs__list conteiner">
+                <li class="breadcrumbs__list-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumbs__list-item"><span>Каталог</span></li>
+            </ul>
+        </section>
+
+        <section class="catalog">
+            <div class="catalog__wrapper conteiner">
+                <h3 class="catalog__title">Тату машинки</h3>
+                <div class="catalog__filters">
+                    <div class="catalog__filters-items">
+                        <button class="catalog__filters-items-btn">Для начинающих</button>
+                        <button class="catalog__filters-items-btn">От билдеров</button>
+                        <button class="catalog__filters-items-btn">Для профессионалов</button>
+                        <button class="catalog__filters-items-btn">Расходники</button>
+                    </div>
+                    <div class="catalog__filters-btn">
+                        <label class="catalog__filters-btn-price">Цена
+                            <input type="text" placeholder="50,00">
+                            <span>&mdash;</span>
+                            <input type="text" placeholder="400,00">
+                        </label>
+                        <label class="catalog__filters-btn-type">Тип машинки
+                            <select name="" id="">
+                                <option value="">Роторная</option>
+                                <option value="">Индукционная</option>
+                                <option value="">С бесколлекторным мотором</option>
+                            </select>
+                        </label>
+                        <label class="catalog__filters-btn-store">Только в наличии
+                            <input type="checkbox"><span class="filters__style-checkbox"></span>
+                        </label>
+                        <label class="catalog__filters-btn-sorting">Сортировка
+                            <select name="" id="">
+                                <option value="">Популярные</option>
+                                <option value="">Дешевые</option>
+                                <option value="">Дорогие</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <div class="catalog__items">
+                    <div class="goods__slider__item">
+                        <div class="goods__gallery__kard goods__new">
+                            <img class="goods__gallery__kard-img" src="images/goods_gallery-1.jpg"
+                                alt="Foxxx Kitsune Mini Black Vintage RCA" title="Foxxx Kitsune Mini Black Vintage RCA">
+                            <label>
+                                <input class="goods__gallery__kard-input" type="checkbox">
+                                <span class="checkbox-style"></span></label>
+                            <div class="goods__gallery__kards-label">Новинка</div>
+                            <div class="goods__gallery__kard-slaider">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider-yes.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                            </div>
+                            <div class="goods__gallery__kards-title">Foxxx Kitsune Mini Black Vintage RCA</div>
+                            <div class="goods__gallery__kards-price">210,00 BYN</div>
+                            <div class="goods__gallery__kards-not__available">Нет в наличии</div>
+                            <p class="goods__gallery__hover-text"><a href="#">Посмотреть товар</a></p>
+                        </div>
+                    </div>
+                    <div class="goods__slider__item">
+                        <div class="goods__gallery__kard googs__not__available">
+                            <img class="goods__gallery__kard-img" src="images/goods_gallery-2.jpg"
+                                alt="Foxxx Viper Fox Golden Vintage Lot #1 RCA"
+                                title="Foxxx Viper Fox Golden Vintage Lot #1 RCA">
+                            <label>
+                                <input class="goods__gallery__kard-input" type="checkbox">
+                                <span class="checkbox-style"></span></label>
+                            <div class="goods__gallery__kards-label">Новинка</div>
+                            <div class="goods__gallery__kard-slaider">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider-yes.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                            </div>
+                            <div class="goods__gallery__kards-title">Foxxx Viper Fox Golden Vintage Lot #1 RCA
+                            </div>
+                            <div class="goods__gallery__kards-price">305,50 BYN</div>
+                            <div class="goods__gallery__kards-not__available">Нет в наличии</div>
+                            <p class="goods__gallery__hover-text"><a href="#">Посмотреть товар</a></p>
+                        </div>
+                    </div>
+                    <div class="goods__slider__item">
+                        <div class="goods__gallery__kard">
+                            <img class="goods__gallery__kard-img" src="images/goods_gallery-3.jpg"
+                                alt="Foxxx Viper Fox Golden Vintage Lot #1 RCA"
+                                title="Foxxx Viper Fox Golden Vintage Lot #1 RCA">
+                            <label>
+                                <input class="goods__gallery__kard-input" type="checkbox">
+                                <span class="checkbox-style"></span></label>
+                            <div class="goods__gallery__kards-label">Новинка</div>
+                            <div class="goods__gallery__kard-slaider">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider-yes.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                            </div>
+                            <div class="goods__gallery__kards-title">Нитровиниловые перчатки Wally Plastic S
+                            </div>
+                            <div class="goods__gallery__kards-price">0.68 BYN</div>
+                            <div class="goods__gallery__kards-not__available">Нет в наличии</div>
+                            <p class="goods__gallery__hover-text"><a href="#">Посмотреть товар</a></p>
+                        </div>
+                    </div>
+                    <div class="goods__slider__item">
+                        <div class="goods__gallery__kard">
+                            <img class="goods__gallery__kard-img" src="images/goods_gallery-4.jpg"
+                                alt="Foxxx Viper Fox Golden Vintage Lot #1 RCA"
+                                title="Foxxx Viper Fox Golden Vintage Lot #1 RCA">
+                            <label>
+                                <input class="goods__gallery__kard-input" type="checkbox">
+                                <span class="checkbox-style"></span></label>
+                            <div class="goods__gallery__kards-label">Новинка</div>
+                            <div class="goods__gallery__kard-slaider">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider-yes.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                            </div>
+                            <div class="goods__gallery__kards-title">Forever Cartridge Grip Ergo 30 mm
+                                Огненно-Рыжий
+                            </div>
+                            <div class="goods__gallery__kards-price">87,98 BYN</div>
+                            <div class="goods__gallery__kards-not__available">Нет в наличии</div>
+                            <p class="goods__gallery__hover-text"><a href="#">Посмотреть товар</a></p>
+                        </div>
+                    </div>
+                    <div class="goods__slider__item">
+                        <div class="goods__gallery__kard">
+                            <img class="goods__gallery__kard-img" src="images/goods_gallery-5.jpg"
+                                alt="Foxxx Viper Fox Golden Vintage Lot #1 RCA"
+                                title="Foxxx Viper Fox Golden Vintage Lot #1 RCA">
+                            <label>
+                                <input class="goods__gallery__kard-input" type="checkbox">
+                                <span class="checkbox-style"></span></label>
+                            <div class="goods__gallery__kards-label">Новинка</div>
+                            <div class="goods__gallery__kard-slaider">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider-yes.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                            </div>
+                            <div class="goods__gallery__kards-title">Verge Direct 2.1 Pink gip EGO 4 mm liners
+                            </div>
+                            <div class="goods__gallery__kards-price">98,56 BYN</div>
+                            <div class="goods__gallery__kards-not__available">Нет в наличии</div>
+                            <p class="goods__gallery__hover-text"><a href="#">Посмотреть товар</a></p>
+                        </div>
+                    </div>
+                    <div class="goods__slider__item">
+                        <div class="goods__gallery__kard">
+                            <img class="goods__gallery__kard-img" src="images/goods_gallery-6.jpg"
+                                alt="Foxxx Viper Fox Golden Vintage Lot #1 RCA"
+                                title="Foxxx Viper Fox Golden Vintage Lot #1 RCA">
+                            <label>
+                                <input class="goods__gallery__kard-input" type="checkbox">
+                                <span class="checkbox-style"></span></label>
+                            <div class="goods__gallery__kards-label">Новинка</div>
+                            <div class="goods__gallery__kard-slaider">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider-yes.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                            </div>
+                            <div class="goods__gallery__kards-title">Deuce Machines Direct Drive #7 RCA Samurai
+                            </div>
+                            <div class="goods__gallery__kards-price">305.97 BYN</div>
+                            <div class="goods__gallery__kards-not__available">Нет в наличии</div>
+                            <p class="goods__gallery__hover-text"><a href="#">Посмотреть товар</a></p>
+                        </div>
+                    </div>
+                    <div class="goods__slider__item">
+                        <div class="goods__gallery__kard">
+                            <img class="goods__gallery__kard-img" src="images/goods_gallery-7.jpg"
+                                alt="Foxxx Viper Fox Golden Vintage Lot #1 RCA"
+                                title="Foxxx Viper Fox Golden Vintage Lot #1 RCA">
+                            <label>
+                                <input class="goods__gallery__kard-input" type="checkbox">
+                                <span class="checkbox-style"></span></label>
+                            <div class="goods__gallery__kards-label">Новинка</div>
+                            <div class="goods__gallery__kard-slaider">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider-yes.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                            </div>
+                            <div class="goods__gallery__kards-title">Cyborg Machines Alter Rotary Axis Cross
+                                Sexy
+                                Nymph
+                            </div>
+                            <div class="goods__gallery__kards-price">380.00 BYN</div>
+                            <div class="goods__gallery__kards-not__available">Нет в наличии</div>
+                            <p class="goods__gallery__hover-text"><a href="#">Посмотреть товар</a></p>
+                        </div>
+                    </div>
+                    <div class="goods__slider__item">
+                        <div class="goods__gallery__kard googs__not__available">
+                            <img class="goods__gallery__kard-img" src="images/goods_gallery-8.jpg"
+                                alt="Foxxx Viper Fox Golden Vintage Lot #1 RCA"
+                                title="Foxxx Viper Fox Golden Vintage Lot #1 RCA">
+                            <label>
+                                <input class="goods__gallery__kard-input" type="checkbox">
+                                <span class="checkbox-style"></span></label>
+                            <div class="goods__gallery__kards-label">Новинка</div>
+                            <div class="goods__gallery__kard-slaider">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider-yes.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                            </div>
+                            <div class="goods__gallery__kards-title">Verge Direct 2.1 Gunmetal</div>
+                            <div class="goods__gallery__kards-price">328.99 BYN</div>
+                            <div class="goods__gallery__kards-not__available">Нет в наличии</div>
+                            <p class="goods__gallery__hover-text"><a href="#">Посмотреть товар</a></p>
+                        </div>
+                    </div>
+
+                    <div class="goods__slider__item">
+                        <div class="goods__gallery__kard goods__new">
+                            <img class="goods__gallery__kard-img" src="images/goods_gallery-1.jpg"
+                                alt="Foxxx Kitsune Mini Black Vintage RCA" title="Foxxx Kitsune Mini Black Vintage RCA">
+                            <label>
+                                <input class="goods__gallery__kard-input" type="checkbox">
+                                <span class="checkbox-style"></span></label>
+                            <div class="goods__gallery__kards-label">Новинка</div>
+                            <div class="goods__gallery__kard-slaider">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider-yes.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                            </div>
+                            <div class="goods__gallery__kards-title">Foxxx Kitsune Mini Black Vintage RCA</div>
+                            <div class="goods__gallery__kards-price">210,00 BYN</div>
+                            <div class="goods__gallery__kards-not__available">Нет в наличии</div>
+                            <p class="goods__gallery__hover-text"><a href="#">Посмотреть товар</a></p>
+                        </div>
+                    </div>
+                    <div class="goods__slider__item">
+                        <div class="goods__gallery__kard googs__not__available">
+                            <img class="goods__gallery__kard-img" src="images/goods_gallery-2.jpg"
+                                alt="Foxxx Viper Fox Golden Vintage Lot #1 RCA"
+                                title="Foxxx Viper Fox Golden Vintage Lot #1 RCA">
+                            <label>
+                                <input class="goods__gallery__kard-input" type="checkbox">
+                                <span class="checkbox-style"></span></label>
+                            <div class="goods__gallery__kards-label">Новинка</div>
+                            <div class="goods__gallery__kard-slaider">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider-yes.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                            </div>
+                            <div class="goods__gallery__kards-title">Foxxx Viper Fox Golden Vintage Lot #1 RCA
+                            </div>
+                            <div class="goods__gallery__kards-price">305,50 BYN</div>
+                            <div class="goods__gallery__kards-not__available">Нет в наличии</div>
+                            <p class="goods__gallery__hover-text"><a href="#">Посмотреть товар</a></p>
+                        </div>
+                    </div>
+                    <div class="goods__slider__item">
+                        <div class="goods__gallery__kard">
+                            <img class="goods__gallery__kard-img" src="images/goods_gallery-3.jpg"
+                                alt="Foxxx Viper Fox Golden Vintage Lot #1 RCA"
+                                title="Foxxx Viper Fox Golden Vintage Lot #1 RCA">
+                            <label>
+                                <input class="goods__gallery__kard-input" type="checkbox">
+                                <span class="checkbox-style"></span></label>
+                            <div class="goods__gallery__kards-label">Новинка</div>
+                            <div class="goods__gallery__kard-slaider">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider-yes.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                            </div>
+                            <div class="goods__gallery__kards-title">Нитровиниловые перчатки Wally Plastic S
+                            </div>
+                            <div class="goods__gallery__kards-price">0.68 BYN</div>
+                            <div class="goods__gallery__kards-not__available">Нет в наличии</div>
+                            <p class="goods__gallery__hover-text"><a href="#">Посмотреть товар</a></p>
+                        </div>
+                    </div>
+                    <div class="goods__slider__item">
+                        <div class="goods__gallery__kard">
+                            <img class="goods__gallery__kard-img" src="images/goods_gallery-4.jpg"
+                                alt="Foxxx Viper Fox Golden Vintage Lot #1 RCA"
+                                title="Foxxx Viper Fox Golden Vintage Lot #1 RCA">
+                            <label>
+                                <input class="goods__gallery__kard-input" type="checkbox">
+                                <span class="checkbox-style"></span></label>
+                            <div class="goods__gallery__kards-label">Новинка</div>
+                            <div class="goods__gallery__kard-slaider">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider-yes.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                            </div>
+                            <div class="goods__gallery__kards-title">Forever Cartridge Grip Ergo 30 mm
+                                Огненно-Рыжий
+                            </div>
+                            <div class="goods__gallery__kards-price">87,98 BYN</div>
+                            <div class="goods__gallery__kards-not__available">Нет в наличии</div>
+                            <p class="goods__gallery__hover-text"><a href="#">Посмотреть товар</a></p>
+                        </div>
+                    </div>
+                    <div class="goods__slider__item">
+                        <div class="goods__gallery__kard">
+                            <img class="goods__gallery__kard-img" src="images/goods_gallery-5.jpg"
+                                alt="Foxxx Viper Fox Golden Vintage Lot #1 RCA"
+                                title="Foxxx Viper Fox Golden Vintage Lot #1 RCA">
+                            <label>
+                                <input class="goods__gallery__kard-input" type="checkbox">
+                                <span class="checkbox-style"></span></label>
+                            <div class="goods__gallery__kards-label">Новинка</div>
+                            <div class="goods__gallery__kard-slaider">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider-yes.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                            </div>
+                            <div class="goods__gallery__kards-title">Verge Direct 2.1 Pink gip EGO 4 mm liners
+                            </div>
+                            <div class="goods__gallery__kards-price">98,56 BYN</div>
+                            <div class="goods__gallery__kards-not__available">Нет в наличии</div>
+                            <p class="goods__gallery__hover-text"><a href="#">Посмотреть товар</a></p>
+                        </div>
+                    </div>
+                    <div class="goods__slider__item">
+                        <div class="goods__gallery__kard">
+                            <img class="goods__gallery__kard-img" src="images/goods_gallery-6.jpg"
+                                alt="Foxxx Viper Fox Golden Vintage Lot #1 RCA"
+                                title="Foxxx Viper Fox Golden Vintage Lot #1 RCA">
+                            <label>
+                                <input class="goods__gallery__kard-input" type="checkbox">
+                                <span class="checkbox-style"></span></label>
+                            <div class="goods__gallery__kards-label">Новинка</div>
+                            <div class="goods__gallery__kard-slaider">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider-yes.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                            </div>
+                            <div class="goods__gallery__kards-title">Deuce Machines Direct Drive #7 RCA Samurai
+                            </div>
+                            <div class="goods__gallery__kards-price">305.97 BYN</div>
+                            <div class="goods__gallery__kards-not__available">Нет в наличии</div>
+                            <p class="goods__gallery__hover-text"><a href="#">Посмотреть товар</a></p>
+                        </div>
+                    </div>
+                    <div class="goods__slider__item">
+                        <div class="goods__gallery__kard">
+                            <img class="goods__gallery__kard-img" src="images/goods_gallery-7.jpg"
+                                alt="Foxxx Viper Fox Golden Vintage Lot #1 RCA"
+                                title="Foxxx Viper Fox Golden Vintage Lot #1 RCA">
+                            <label>
+                                <input class="goods__gallery__kard-input" type="checkbox">
+                                <span class="checkbox-style"></span></label>
+                            <div class="goods__gallery__kards-label">Новинка</div>
+                            <div class="goods__gallery__kard-slaider">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider-yes.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                            </div>
+                            <div class="goods__gallery__kards-title">Cyborg Machines Alter Rotary Axis Cross
+                                Sexy
+                                Nymph
+                            </div>
+                            <div class="goods__gallery__kards-price">380.00 BYN</div>
+                            <div class="goods__gallery__kards-not__available">Нет в наличии</div>
+                            <p class="goods__gallery__hover-text"><a href="#">Посмотреть товар</a></p>
+                        </div>
+                    </div>
+                    <div class="goods__slider__item">
+                        <div class="goods__gallery__kard googs__not__available">
+                            <img class="goods__gallery__kard-img" src="images/goods_gallery-8.jpg"
+                                alt="Foxxx Viper Fox Golden Vintage Lot #1 RCA"
+                                title="Foxxx Viper Fox Golden Vintage Lot #1 RCA">
+                            <label>
+                                <input class="goods__gallery__kard-input" type="checkbox">
+                                <span class="checkbox-style"></span></label>
+                            <div class="goods__gallery__kards-label">Новинка</div>
+                            <div class="goods__gallery__kard-slaider">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider-yes.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                                <img class="goods__gallery__kard-slaider" src="images/gallery-slaider.png"
+                                    alt="Слайдер">
+                            </div>
+                            <div class="goods__gallery__kards-title">Verge Direct 2.1 Gunmetal</div>
+                            <div class="goods__gallery__kards-price">328.99 BYN</div>
+                            <div class="goods__gallery__kards-not__available">Нет в наличии</div>
+                            <p class="goods__gallery__hover-text"><a href="#">Посмотреть товар</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__wrapper conteiner">
+            <div class="footer__logo">
+                <img class="footer__logo-img" src="images/logo.png" alt="">
+                <div class="footer__text"><a href="#">Политика конфенедциальности</a></div>
+            </div>
+            <div class="footer__menu">
+                <a href="">Промокоды</a>
+                <a href="">Скидки</a>
+                <a href="">Помощь</a>
+                <a href="">О нас</a>
+                <a href="">Контакты</a>
+            </div>
+            <div class="footer__info">
+                <div class="footer__info__tel">
+                    <a href="tel:+375290000000"><img class="phone__icon" src="images/icon-phone.png" alt="call to us"> +
+                        375 29 000-00-00</a>
+                </div>
+                <div class="footer__info__text">Время работы: с 9:00 до 20:00</div>
+                <div class="footer__info__email">
+                    <a href="mailto:Mr.Margiela@gmail.com"><img class="email__icon" src="images/icon-mail.png"
+                            alt="Write to us">
+                        Mr.Margiela@gmail.com</a>
+                </div>
+            </div>
+            <div class="footer__icon">
+                <a href="viber://chat?number=%2B375290000000"><img class="phone__icon" src="images/icon-telegram.svg"
+                        alt="call to us"></a>
+                <a href="https://api.whatsapp.com/send?phone="><img class="phone__icon" src="images/icon-viber.svg"
+                        alt="call to us"></a>
+                <a href="https://t.me/Lika_T007"><img class="phone__icon" src="images/icon-WhatsApp.svg"
+                        alt="call to us"></a>
+            </div>
+        </div>
+    </footer>
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
