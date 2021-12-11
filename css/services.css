@@ -12,7 +12,10 @@
 .services__prise {
     margin: 50px auto 50px;
 }
+details  {
+scroll-behavior: smooth;
 
+}
 details > summary {
     list-style: none; 
     color: #BB8C5F;
@@ -21,6 +24,7 @@ details > summary {
     font-size: 30px;
     position: relative;
     padding-left: 30px;
+    
 }
 .servises__price-btn::after{
     content: "▼";
@@ -31,7 +35,10 @@ details > summary {
     transform: translateY(-50%);
     
 }
-.servicesul>li {
+.services ul{
+    
+}
+.services ul>li {
     border-bottom: #3E424B 1px solid;
     line-height: 50px;
     padding:0 20px; 
