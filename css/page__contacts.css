@@ -1,3 +1,6 @@
+/* *{
+    outline: 1px solid red;
+} */
 .address {
 }
 .addres__wrapper {
@@ -25,15 +28,15 @@
     width: 65%;
     background: #F5F5F5;
     margin-right: 20px;
-    padding: 30px 40px 50px 50px;
-    flex-shrink: 10;
+    padding: 30px 2.6vw 2.6vw 2.6vw;
+    flex-shrink: 30;
 }
 .address__info-block p:last-child{
     padding-top: 20px;
 }
 a.address__info-tel {
     font-weight: bold;
-    font-size: 60px;
+    font-size: clamp(30px, 3.3vw, 60px);
     line-height: 90px;
 }
 .address__info-skype {
@@ -45,11 +48,12 @@ a.address__info-tel {
     background: #F5F5F5;
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: max(2.08vw, 20px);
     justify-content: space-between;
 }
 p strong {
     margin-bottom: 20px;
+    font-size: ;
 }
 .address__info-photo {
     display: flex;
@@ -59,11 +63,14 @@ p strong {
     margin-bottom: 20px;
 }
 .address__info-photo-img {
+    width: max(85px, 8.6vw);
 }
 .address__info-text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    white-space: nowrap;
+    font-size: 15px;
 }
 .address__info-text p:last-child:before{
     content: " ";
@@ -75,28 +82,36 @@ p strong {
     margin-right: 5px;
 }
 
-.phone {
+.addres__phone {
+    padding: 10px 0;
+    box-sizing: border-box;
 }  
 .phone__icon {
+    width: 20px;
+    
 }
-.call {
+.addres__call {
+    padding: 10px 0;
 }
-.email {
+.addres__email {
+    padding: 10px 0;
 }
 .email__icon {
+    width: 20px;
 }
 .address__manager {
     padding-bottom: 40px;
     position: relative;
 }
 .address__manager__card {
-    padding: 20px;
+    padding: 20px; 
     background: #F5F5F5;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 395px;
+    max-width: 400px;
     flex-shrink: 10;
+    box-sizing: border-box;
 }
 .address__manager__card strong {
     font-size: 17px;
@@ -108,6 +123,10 @@ p strong {
     display: flex;
     flex-direction: row;
     gap: 25px;
+}
+.address__manager-photo-img {
+    width: max(80px, 8vw);
+    height: max(80px, 8vw);
 }
 .address__manager-photo .call a{
     font-size: 14px;
@@ -143,7 +162,7 @@ p strong {
     flex-wrap: wrap; 
     width: 65%;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: center;
 }
 addreee__info-title {
     width: 100%;
@@ -152,4 +171,53 @@ addreee__info-title {
     position: absolute;
     top: 60px;
     right: 0;
+    width: 34%;
+    min-height: 440px;
+}
+@media all and (max-width: 1181px) {
+    .address__manager iframe{ 
+        width: 100%;
+        min-height: 300px;
+        position: relative;
+    }
+    .address__manager {
+        padding-bottom: 70px;
+        position: relative;
+    }
+     .address__manager__wrapper{
+        width: 100%;
+    } 
+}
+
+@media all and (max-width: 990px) {
+    .address__info__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .address__info-block {
+        width: 100%;
+        
+    }
+    .address__info-service {
+        width: 100%; 
+    }
+    .address__manager__card {
+        gap: 10px;
+        min-width: 280px;
+        box-sizing: border-box;
+    }
+    .address__manager__card strong {
+        font-size: 15px;
+    }
+}
+@media all and (max-width: 400px) {
+    .address__manager__card {
+        padding: 5px;
+    }
+    .address__manager__card {
+        gap: 10px;
+        max-width: 280px;
+        box-sizing: border-box;
+    }
 }

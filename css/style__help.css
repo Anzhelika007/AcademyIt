@@ -65,12 +65,29 @@ details>div{
     background-color: rgb(214, 209, 209); 
     position: relative;
 }
-.help__info__title::after{
-    content: "▼";
-    position: absolute;
+.help__info__title::before{
     top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
+    width: 1px;
+    content: '';
+    right: 1.7rem;
+    display: block;
+    height: 1.1rem;
+    position: absolute;
+    margin-top: -0.5rem;
+    background-color: #6f6f7b;
+}
+.help__info__title:active::before{
+    transform:rotate(90deg);
+}
+.help__info__title::after{
+    top: 50%;
+    height: 1px;
+    content: '';
+    right: 1.2rem;
+    width: 1.1rem;
+    display: block;
+    position: absolute;
+    background-color: #6f6f7b;
 }
 
 .help__info__title-text {
