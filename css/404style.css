@@ -16,3 +16,12 @@ body {
     margin: 0 auto; 
     padding: 0 20px;
 }
+
+.page404__content__button:hover {
+    transform: scale(1.1);
+    transition: all .3s;
+}
+.page404__content__button:active {
+    background-color: #bb8b5f81;
+    transition: all .3s;
+}

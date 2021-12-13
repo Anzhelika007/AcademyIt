@@ -26,6 +26,7 @@
     background: #F5F5F5;
     margin-right: 20px;
     padding: 30px 40px 50px 50px;
+    flex-shrink: 10;
 }
 .address__info-block p:last-child{
     padding-top: 20px;
@@ -85,7 +86,8 @@ p strong {
 .email__icon {
 }
 .address__manager {
-     padding-bottom: 40px;
+    padding-bottom: 40px;
+    position: relative;
 }
 .address__manager__card {
     padding: 20px;
@@ -94,7 +96,7 @@ p strong {
     flex-direction: column;
     gap: 10px;
     max-width: 395px;
-    
+    flex-shrink: 10;
 }
 .address__manager__card strong {
     font-size: 17px;
@@ -138,8 +140,16 @@ p strong {
 .address__manager__wrapper {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     width: 65%;
     gap: 20px;
     justify-content: space-between;
+}
+addreee__info-title {
+    width: 100%;
+}
+.address__manager iframe{
+    position: absolute;
+    top: 60px;
+    right: 0;
 }

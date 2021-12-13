@@ -38,6 +38,7 @@
 
 .catalog__filters-btn {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
@@ -157,6 +158,7 @@
 }
 .papagination__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .conteiner {
