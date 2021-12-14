@@ -18,6 +18,14 @@ $(function () {
         infinite: true,
         prevArrow: '<button class="brands__gallery-btn brands__gallery-btnprev"><img src="images/icon-brand-left.png"></button>',
         nextArrow: '<button class="brands__gallery-btn brands__gallery-btnnext"><img src="images/icon-brand-right.png"></button>',
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 3
+                }
+            }
+        ]
     });
 
     $('.tab').on('click', function (e) {

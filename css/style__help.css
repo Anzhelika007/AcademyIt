@@ -58,7 +58,7 @@ details>div{
 .help__info__card-body {
     border-left: 1px solid rgb(214, 209, 209);
     border-bottom: 1px solid rgb(214, 209, 209);
-    text-align: justify;
+  /*   text-align: justify; */
     padding: 10px 15px 10px 30px;
 }
 .help__info__title {

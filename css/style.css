@@ -1,3 +1,7 @@
+*{
+    outline: 1px solid red;
+}
+
 *,
 *::after,
 *::before {
@@ -34,7 +38,7 @@ h4, h5, button {
     font-weight: 400;
 }
 h1 {
-    font-size: clamp(35px, 7.8vw, 75px);
+    font-size: clamp(35px, 6vw, 75px);
     line-height: 100%;
     color: #BB8C5F;
     padding-bottom: 50px;
@@ -166,8 +170,6 @@ header {
 .cabinet {
     padding-bottom: 18px;
 }
-.cabinet__icon {
-}
 .line__top {
     width: 100%; 
 }
@@ -245,11 +247,9 @@ header {
     width: 100%;
     background-color: #050402;
 }
-.header__content-wrapper {
-}
 .header__slaider {
     max-width: 1920px;
-    max-height: 900px;
+    /* max-height: 900px; */
     position: relative;
 }
 .header__slaider-btn{
@@ -264,17 +264,17 @@ header {
     cursor: pointer;
 }   
 .header__slaider-btnprev{
-   right: 150px;
+   right: 7.6vw;
    top:30%;
 }
 .header__slaider-btnnext{
-    right: 150px;
+    right: 7.6vw;
     top:65%;
  }
  .header__slaider ul.slick-dots{
     position: absolute;
     top: 37%;
-    right: 160px;
+    right: 8.3vw;
 }
 .slick-dots button {
     padding: 0;
@@ -322,7 +322,9 @@ header {
     background-color: #bb8b5f81;
     transition: all .3s;
 }
-
+.header__slaider__item > img{
+    width: 100vw;
+}
  /*ВТОРАЯ СТРАНИЦА популятные товары*/
  .goods {
     width: 100%;
@@ -339,11 +341,10 @@ header {
     justify-content: space-between;
     flex-direction: row;
     font-weight: 500;
-    font-size: 30px;
+    font-size: max(20px,1.5vw);
     line-height: 50px;
     color: #3E424B;
 }
-
 .goods__tab__iner.tab--active {
     border-bottom: 2px solid #BB8C5F;
 }
@@ -354,11 +355,15 @@ header {
     display: block;
 }
 .goods__conteiner{
-    width: 1220px;
+    width: 100%;
 }
 .goods__slider {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
     gap: 20px;
 }
 .goods__gallery__kard {
@@ -488,8 +493,9 @@ a .goods__gallery-button {
     margin-top: 50px;
     display: grid;
     grid-template-columns: 340px 135px 185px 131px 340px;
-    grid-template-rows: repeat(auto-fill, minmax(229px, 350px));
+    /* grid-template-rows: repeat(auto-fill, minmax(229px, 350px)); */
     gap: 20px;
+    grid-auto-flow: row;
     grid-template-areas: 
     "a1 a1 a2 a2 a2"
     "a3 a4 a4 a4 a5"
@@ -502,7 +508,6 @@ a .goods__gallery-button {
     background:  #F5F5F5;
     max-height: 350px;
 }
-
 .catalog__group a:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -587,8 +592,6 @@ a .goods__gallery-button {
     mix-blend-mode: darken;
 }
 /*СЛАЙД */
-.slaid {
-}
 .slaid__wrapper {
     display: flex;
     justify-content: space-between;
@@ -605,7 +608,7 @@ a .goods__gallery-button {
     margin: 40px auto 378px;
     text-align: center;
     font-weight: bold;
-    font-size: 40px;
+    font-size: clamp(20px, 40vw, 40px);
     line-height: 130%;
     color: #FAF6F2;
 }
@@ -618,13 +621,12 @@ a .goods__gallery-button {
 }
 .slaid__link__left {
     top: 390px;
-    left: 340px;
+    left: 17.7vw;
 }
-
 .slaid__line-left {
     position: absolute;
     top: 420px;
-    left: 337px;
+    left: 17.5vw ;
     padding-top: 10px;
     min-width: 225px;
 }
@@ -638,7 +640,7 @@ a .goods__gallery-button {
 .slaid__title-right { 
     margin: 40px 0 0 50px;
     font-weight: bold;
-    font-size: 40px;
+    font-size: clamp(20px, 40vw, 40px);
     line-height: 130%;
     color: #FAF6F2;
 }
@@ -663,8 +665,6 @@ a .goods__gallery-button {
     justify-content: space-between;
     align-items: baseline;
     width: 100%;
-}
-.brands__title {
 }
 .brands__link {
     color: #3E424B;
@@ -721,9 +721,6 @@ a .goods__gallery-button {
 }
 .shop__article__title {
     font-size: 45px;
-}
-.shop__article__text {
-   
 }
 .shop__button {
     margin-top: 30px;
@@ -842,7 +839,6 @@ a .goods__gallery-button {
 }
 .slick-active button {
     background-color: #BB8C5F;
-   
 }
 /*контакты*/
 .contacts {
@@ -874,10 +870,6 @@ a .goods__gallery-button {
     min-width: 20vw;
     min-height: 50px;
     display: block;
-}
-.contacts__checkbox {
-}
-.contacts__checkbox-style {
 }
 .contacts__button {
     line-height: 150%;
@@ -936,10 +928,6 @@ footer {
 .footer__info__text {
     color: #636B78;
 }
-.footer__info__email {
-}
-.email__icon {
-}
 .footer__icon {
     align-items: flex-end;
 }
@@ -947,8 +935,6 @@ footer {
 .breadcrumbs {
     margin: 50px 0 30px;
     max-width: 300px;
-}
-.breadcrumbs__list {
 }
 .breadcrumbs__list-item {
     display: inline-block;
@@ -986,10 +972,22 @@ footer {
     color: #3E424B;
     padding-bottom: 50px;
 }
-
-
-
-
+@media all and (max-width: 1100px) {
+    .shop__wrapper {
+        flex-direction: column;
+        align-items: center
+    }
+    .shop__bg-img {
+        width: 100%;
+        order: 1;
+    }
+    .shop__article{
+       max-width: 80%;
+       min-height: auto;
+       padding-left: 0;
+       gap: 20px;
+       margin: 20px auto;
+    }
 @media all and (max-width: 990px) {
     .email a > span {
         display: none;
@@ -1086,11 +1084,22 @@ footer {
         justify-content: center;
         padding: 30px 0;
     }
+    .slaid__line-left, 
+    .slaid__link {
+        left: 53px;
+    }
 }
 
  @media all and (max-width: 770px) {
     .page404__content__button{
         font-size: max(15px, 2.8vw);
+    }
+} 
+
+@media all and (max-width: 720px) {
+    .goods__tab {
+        flex-direction: column;
+        text-align: center;
     }
 } 
 
@@ -1102,6 +1111,31 @@ footer {
     .page404__content__text{
         display: none;
     }
+    .slaid__wrapper{
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+    .slaid__item-left,
+    .slaid__item-right {
+        width: 100%;
+        height: 300px;
+        box-sizing: border-box;
+    }
+    .slaid__link__left,
+    .slaid__link__right,
+    .slaid__line-left,
+    .slaid__line-right {
+        text-align: center;
+    }
+    .slaid__link__left,
+    .slaid__link__right{
+        top: 200px;
+    }
+    .slaid__line-left,
+    .slaid__line-right{
+        top: 220px;
+    }
 } 
 @media all and (max-width: 572px) {
     .search {
@@ -1109,13 +1143,12 @@ footer {
     }
 }
 
-
-
 @media all and (max-width: 400px) {
     .cabinet {
         display: none;
     }
 }  
+
 @media all and (max-width: 321px) {
     .page404__content{
         text-align: center;

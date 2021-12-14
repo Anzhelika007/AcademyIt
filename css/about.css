@@ -1,3 +1,7 @@
+/* *{
+    outline: red 1px solid;
+} */
+
 .about{
     position: relative;
 }
@@ -28,7 +32,6 @@
     background-size: cover;
     min-height: 1350px;
     width: 100%;
-   /*  z-index: 5; */
     overflow: hidden;
     position: relative;
 } 
@@ -41,7 +44,7 @@
     padding: 50px 150px 30px 150px;
 }
 .about__item__inner{
-    width: 50%;
+    width: 50vw;
     text-align: justify;
     margin: 0 auto;
 }
@@ -61,7 +64,7 @@
     justify-content: space-between;
 }
 .about__item__info-age{
-    font-size: 25px;
+    font-size: max(20px, 1.3vw);
     padding: 0 10px;
     line-height: 28px;
 }
@@ -100,7 +103,7 @@
 .about__principles__item{
     background-color: #EEEEEE;
     clip-path: polygon(0 10%, 100% 0, 100% 70%, 0% 90%);
-    height: 850px;
+    height: 800px;
     width: 100%;
     position: absolute;
     top: -100px;
@@ -136,8 +139,7 @@
     width: 30%;
     font-size: 25px;
     line-height: 28px;
-    /* height: 220px; */
-   /*  background: #F5F5F5; */
+   
 }
 .about__principles-number {
     padding: 0 10px;
@@ -152,7 +154,7 @@
     font-weight: bold;
 }
 .about__principles-text {
-    font-size: 25px;
+    font-size: max(20px, 1.3vw);
     text-align: justify;
 }
 .about__principles-text > span {
@@ -169,21 +171,67 @@
    flex-direction: column;
 }
 .about__wrapper3 .conteiner > span{
-    font-size: 25px;
+    font-size: max(1.3vw, 20px);
     line-height: 25px;
     text-align: center;
 }
 .about__wrapper3 .conteiner > hr {
-    margin: 30px auto;
+    margin: 20px auto;
     width: 50%;
 }
 .about__wrapper3 .conteiner span:nth-child(3) {
-    font-size: 30px;
+    font-size: max(1.5vw, 20px);
     line-height: 30px;
     text-align: center;
     width: 100%;
 }
    
+@media all and (max-width: 1230px) {
+    .about__principles__item{
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        justify-content: center;
+        padding: 50px 100px 150px 100px;
+        }
+    
+    .about__principles-inner{
+        width: 100%;
+    }
+    .about__wrapper__item{
+        min-height: 700px;         
+        
+    }
+    .about__item__info{
+        flex-direction: column;
+    }
+    .about__item{
+        padding: 50px 0px 30px;
+    }
+    .about__item{
+        height: max(800px, 40vw);
+    }
+}
 
-
-
+@media all and (max-width: 1040px) {
+    .conteiner{
+        width: 100vw;
+    }
+    .breadcrumbs{
+        max-width: 280px;
+        left: 20px;
+    }
+    .breadcrumbs >ul>li{
+        max-width: 280px;
+        
+    }
+}
+@media all and (max-width: 990px) {
+    .about__item__info-age > span{
+        display: inline-block;
+        padding: 0 10px 0 10px;
+        margin: 10px;
+    }
+}
