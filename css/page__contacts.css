@@ -220,4 +220,7 @@ addreee__info-title {
         max-width: 280px;
         box-sizing: border-box;
     }
+    .addres__call {
+        display: none;
+    }
 }

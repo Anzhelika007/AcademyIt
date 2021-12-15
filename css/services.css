@@ -1,6 +1,6 @@
-.services {
-}
-
+/* *{
+    outline: 1px solid red;
+} */
 .services__price__title, 
 .attendance__title  {
     color:#3E424B;
@@ -132,11 +132,14 @@ details > summary {
     height: 30vw;
 }
 .attendance__item:nth-child(2){
-    clip-path: circle(50%);
+    clip-path: circle(45%);
     background-image: url(../images/attendance-2-makeup.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 30vw;
+}
+.attendance__item:nth-child(2) span {
+    top: 100px;
 }
 .attendance__item:nth-child(3){
     background-image: url(../images/attendance-3-piercing.jpg);
@@ -172,4 +175,40 @@ details > summary {
     background-repeat: no-repeat;
     background-size: cover;
     height: 30vw;
+}
+
+@media all and (max-width: 1260px) {
+    .attendance__item{
+    width: 100%;
+    min-width: 300px;
+    min-height:350px;
+    }
+}
+@media all and (max-width: 660px) {
+    .attendance__item:nth-child(1){
+        border-top-left-radius: 0;
+    }
+    .attendance__item:nth-child(2) {
+        clip-path: none;
+    }
+    .attendance__item:nth-child(4){
+        border-bottom-left-radius: 0;
+    }
+    .attendance__item:nth-child(5){
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+    }
+    .attendance__item:nth-child(6){
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        width: 100%;
+    }
+    .attendance__title-card {
+        font-size: 20px;
+    }
+    .attendance__item{
+        min-width: 280px;
+        min-height:300px;
+    }
 }
