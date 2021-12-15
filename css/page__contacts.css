@@ -1,19 +1,8 @@
-/* *{
-    outline: 1px solid red;
-} */
-.address {
-}
 .addres__wrapper {
     display: flex;
     flex-direction: column; 
     color: #3E424B;
     gap: 50px;
-}
-.address__title {
-
-}
-.address__info {
-    
 }
 .addreee__info-title {
     font-weight: bold;
@@ -81,14 +70,12 @@ p strong {
     background-color: brown;
     margin-right: 5px;
 }
-
 .addres__phone {
     padding: 10px 0;
     box-sizing: border-box;
 }  
 .phone__icon {
     width: 20px;
-    
 }
 .addres__call {
     padding: 10px 0;
@@ -132,7 +119,6 @@ p strong {
     font-size: 14px;
     padding-bottom: 0 0 30px 0;
 }
-
 .address__manager__card p {
    display: flex;
    flex-direction: row;
@@ -174,6 +160,7 @@ addreee__info-title {
     width: 34%;
     min-height: 440px;
 }
+
 @media all and (max-width: 1181px) {
     .address__manager iframe{ 
         width: 100%;
@@ -211,6 +198,7 @@ addreee__info-title {
         font-size: 15px;
     }
 }
+
 @media all and (max-width: 400px) {
     .address__manager__card {
         padding: 5px;

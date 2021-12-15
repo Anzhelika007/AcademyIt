@@ -1,19 +1,13 @@
-/* *{
-    outline: 1px solid red;
-} */
 .services__price__title, 
 .attendance__title  {
     color:#3E424B;
     padding-top: 30px;
 }
-.services__wrapper {
-}
 .services__prise {
     margin: 50px auto 50px;
 }
 details  {
-scroll-behavior: smooth;
-
+    scroll-behavior: smooth;
 }
 details > summary {
     list-style: none; 
@@ -24,16 +18,13 @@ details > summary {
     position: relative;
     padding-left: 30px;
 }
-.servises__price-btn::after{
+.servises__price-btn::after {
     content: "▼";
     color: #BB8C5F;
     position: absolute;
     top: 50%;
     right: 20px; 
     transform: translateY(-50%);
-}
-.services ul{
-    
 }
 .services ul>li {
     border-bottom: #3E424B 1px solid;
@@ -42,7 +33,6 @@ details > summary {
     display: flex;
     justify-content: space-between;
     font-size: 25px;
-
 }
 .servises__price-text {
     font-size: 25px;
@@ -51,16 +41,6 @@ details > summary {
 .servises__price-item {
     margin-bottom: 20px;
 }
-.servises__price-title {
-}
-.servises__price-btn {
-}
-.servises__price-info {
-}
-
-.attendance {
-}
-
 .attendance__wrapper {
     margin-top: 50px;
     display: flex;
@@ -72,19 +52,14 @@ details > summary {
     gap: 20px;
     position: relative;
 }
-
 .attendance__item {
     width: 50%;
     max-width: 600px;
     position: relative;
     box-shadow: inset 0 120px  30px 0 rgba(0, 0, 0, 0.6);
-
 }
 .attendance__item:hover{
-    cursor: pointer;
-    
-}
-.attendance__link {
+    cursor: pointer;  
 }
 .attendance__title-card {
     position: absolute;
@@ -98,7 +73,6 @@ details > summary {
 }
 .attendance__text {
     display: none;
-    
 }
 .attendance__item:hover{
     background-color: 0.33;
@@ -118,7 +92,6 @@ details > summary {
     left: 50%;
     transform: translate(-50%, -50%)
 }
-
 .attendance__item-img {
     width: 100%;
     height: 100%;
@@ -146,7 +119,6 @@ details > summary {
     background-repeat: no-repeat;
     background-size: 100% auto;
     height: 30vw;
-    
 }
 .attendance__item:nth-child(4){
     border-bottom-left-radius: 50%;
@@ -179,36 +151,58 @@ details > summary {
 
 @media all and (max-width: 1260px) {
     .attendance__item{
-    width: 100%;
-    min-width: 300px;
-    min-height:350px;
+        width: 100%;
+        min-width: 300px;
+        min-height:350px;
     }
 }
+
+@media all and (max-width: 740px) {
+   .servises__price-info ul > li{
+      font-size: 20px;
+   }
+   .servises__price-text {
+       font-size: 20px;
+   }
+} 
+
 @media all and (max-width: 660px) {
-    .attendance__item:nth-child(1){
+    .attendance__item:nth-child(1) {
         border-top-left-radius: 0;
     }
     .attendance__item:nth-child(2) {
         clip-path: none;
     }
-    .attendance__item:nth-child(4){
+    .attendance__item:nth-child(4) {
         border-bottom-left-radius: 0;
     }
     .attendance__item:nth-child(5){
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
     }
-    .attendance__item:nth-child(6){
+    .attendance__item:nth-child(6) {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         border-top-right-radius: 0;
         width: 100%;
     }
     .attendance__title-card {
-        font-size: 20px;
+        font-size: 25px;
     }
-    .attendance__item{
+    .attendance__item {
         min-width: 280px;
         min-height:300px;
     }
+}
+
+@media all and (max-width: 540px) {
+    .servises__price-btn {
+       font-size: 20px;
+    }
+}
+
+@media all and (max-width: 420px) {
+    .servises__price-info ul > li {
+        font-size: 15px;
+     }
 }

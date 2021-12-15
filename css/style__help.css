@@ -50,7 +50,6 @@ details{
     position: relative;
 }
 details>div{
-  /*   position: absolute; */
     background-color: #EEEEEE;
     z-index: 1;
     box-shadow: black;
