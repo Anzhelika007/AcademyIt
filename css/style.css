@@ -1,7 +1,3 @@
-/* *{
-    outline: 1px solid red;
-} */
-
 *,
 *::after,
 *::before {
@@ -165,8 +161,6 @@ header {
 .like {
     padding-bottom: 20px;
 }
-.like__icon {
-}
 .cabinet {
     padding-bottom: 18px;
 }
@@ -175,8 +169,6 @@ header {
 }
 .line__top__icon {
     width: 100%;
-}
-.header_bottom {
 }
 .catalog__top {
     width: 100%;
@@ -246,19 +238,29 @@ header {
 .header__content {
     width: 100%;
     background-color: #050402;
-    height: 80vh;  
+    height: 80vh; 
+    background-image: url(../images/bg-head1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    position: relative;
+}
+picture {
+    width: 100%;
+    overflow: hidden;
 }
 .header__slaider {
     position: relative;
 }
-.slaider {
+.slider {
     display: flex;
     align-items: center;
     flex-direction: column;
     position: absolute;
     right: 20px;
     top: 138px;
-}
+} 
 .slaider__icon {
     width: 16px;
     padding-bottom: 15px;
@@ -267,8 +269,8 @@ header {
 .slaider__icon:nth-child(7) {
     min-width: 40px;
 }
- /*CЛАЙДЕР{
-/* .header__slaider-btn{
+
+.header__slaider-btn{
     position: absolute;
     transform: translateY(-50%);
     background-color: transparent;
@@ -279,7 +281,7 @@ header {
     z-index: 5;
     cursor: pointer;
 }   
-.header__slaider-btnprev{
+/* .header__slaider-btnprev{
    right: 7.6vw;
    top:30%;
 }
@@ -291,7 +293,7 @@ header {
     position: absolute;
     top: 37%;
     right: 8.3vw;
-}
+} */
 .slick-dots button {
     padding: 0;
     font-size: 0;
@@ -308,7 +310,7 @@ header {
 .slick-tract{
     transform: none;
     transition: none;
-} */
+} 
 
 .header__slaider__title {
     position: absolute;
@@ -323,7 +325,7 @@ header {
 }
 .header__slaider__button {
     position: absolute;
-    bottom: 200px;
+    top: 500px;
     background-color:transparent; 
     cursor: pointer;
     background-color:  #524336;
@@ -338,8 +340,11 @@ header {
     transition: all .3s;
 }
 .header__slaider__item > img{
+    width: 100%;
+    object-fit: cover; 
      object-fit: cover; 
-    
+    object-fit: cover; 
+    overflow: hidden;
 }
  /*ВТОРАЯ СТРАНИЦА популятные товары*/
  .goods {
@@ -427,7 +432,6 @@ header {
 .goods__gallery__hover-text {
     display: none;
 }
-
 .goods__gallery__kard:hover .goods__gallery__hover-text{
     display: block;
     opacity: 1;
@@ -498,7 +502,6 @@ a .goods__gallery-button {
 .goods__title__link.goods__title--activ{
     border-bottom: 2px solid #BB8C5F;
 }
-
 /*каталог группы*/
 .catalog__wrapper {
     width: 100%;
@@ -722,9 +725,6 @@ a .goods__gallery-button {
     right: -60px;
 }
 /*0 МАГАЗИНЕ*/
-.shop {
-    /*position: relative;*/
-}
 .shop__wrapper {
     display: flex;
     width: 100%;
@@ -881,7 +881,6 @@ a .goods__gallery-button {
     color: #3E424B;
     font-weight: 500;
     padding-bottom: 30px;
-
 }
 .contacts__form {
     padding-bottom: 30px;
@@ -950,9 +949,6 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     min-width: 240px;
-}
-.footer__info__tel {
-   
 }
 .phone__icon {
     flex-shrink: 5;
@@ -1285,12 +1281,21 @@ a .page404__content__button{
     .slaid__line-right{
         top: 220px;
     }
-} 
-
-@media all and (max-width: 600px) {
+    .header__content {
+        background-image: url(../images/bg-head1-500.jpg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        width: 100%;
+    }
     .search {
         display: none;
     }
+    .header__slaider__text{
+        font-size: 20px;
+    }
+}
+@media all and (max-width: 600px) {
+    
 }
 @media all and (max-width: 500px){
     a .page404__content__button{
@@ -1302,10 +1307,26 @@ a .page404__content__button{
     .brands {
         display: none;
     }
+    .slider {
+        display: none;
+    }
 }
 @media all and (max-width: 400px) {
     .cabinet {
         display: none;
+    }
+    .header__slaider__title {
+        top:70px
+    }
+    .header__content {
+        background-size: contain;
+        height: 500px;
+    }
+    .header__slaider__text {
+        top: 200px;
+    }
+    .header__slaider__button {
+        top: 350px;
     }
 }  
 @media all and (max-width: 380px) {
@@ -1313,7 +1334,6 @@ a .page404__content__button{
         display: none;
     }
 }  
-
 
 @media all and (max-width: 321px) {
     .page404__content{

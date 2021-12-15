@@ -1,15 +1,15 @@
 $(function () {
 
-    /* $('.header__slaider').slick({
-        autoplay: false,
-        autoplaySpeed: 2000,
-        infinite: true,
-        dots: true,
-        variableWidth: true,
-        centerMode: true,
-        prevArrow: '<button class="header__slaider-btn header__slaider-btnprev"><img src="images/icon-top-slaider.svg"></button>',
-        nextArrow: '<button class="header__slaider-btn header__slaider-btnnext"><img src="images/icon-bottom-slaider.svg"></button>',
-    }); */
+    /*  $('.header__slaider').slick({
+         autoplay: false,
+         autoplaySpeed: 2000,
+         infinite: true,
+         dots: true,
+         variableWidth: true,
+         centerMode: true,
+         prevArrow: '<button class="header__slaider-btn header__slaider-btnprev"><img src="images/icon-top-slaider.svg"></button>',
+         nextArrow: '<button class="header__slaider-btn header__slaider-btnnext"><img src="images/icon-bottom-slaider.svg"></button>',
+     }); */
 
 
     $('.brands__gallery').slick({
