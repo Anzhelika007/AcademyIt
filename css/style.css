@@ -246,13 +246,29 @@ header {
 .header__content {
     width: 100%;
     background-color: #050402;
-   /*  height: 80vh;  */
+    height: 80vh;  
 }
 .header__slaider {
-    max-width: 100vw;
     position: relative;
 }
-.header__slaider-btn{
+.slaider {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 138px;
+}
+.slaider__icon {
+    width: 16px;
+    padding-bottom: 15px;
+}
+.slaider__icon:nth-child(1),
+.slaider__icon:nth-child(7) {
+    min-width: 40px;
+}
+ /*CЛАЙДЕР{
+/* .header__slaider-btn{
     position: absolute;
     transform: translateY(-50%);
     background-color: transparent;
@@ -292,23 +308,22 @@ header {
 .slick-tract{
     transform: none;
     transition: none;
-}
+} */
+
 .header__slaider__title {
     position: absolute;
     top: 100px;
-    margin: 0 150px;
+    padding-left: 20px;
     text-shadow: 2px 2px 2px black, 0 0 1em rgb(8, 0, 0);
 }
 .header__slaider__text {
     position: absolute;
     top: 300px;
-    margin: 0 150px;
     text-shadow: 5px 5px 5px black, 5px 5px 5px rgb(8, 0, 0);
 }
 .header__slaider__button {
     position: absolute;
-    margin: 0 150px;
-    bottom: 100px;
+    bottom: 200px;
     background-color:transparent; 
     cursor: pointer;
     background-color:  #524336;
@@ -323,7 +338,7 @@ header {
     transition: all .3s;
 }
 .header__slaider__item > img{
-    /* object-fit: cover; */
+     object-fit: cover; 
     
 }
  /*ВТОРАЯ СТРАНИЦА популятные товары*/
@@ -1270,7 +1285,6 @@ a .page404__content__button{
     .slaid__line-right{
         top: 220px;
     }
-   
 } 
 
 @media all and (max-width: 600px) {

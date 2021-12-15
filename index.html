@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Jost&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -79,16 +80,30 @@
     <main>
         <section class="header__content new__section">
             <div class="header__content-wrapper">
-                <div class="header__slaider">
+                <div class="header__slaider conteiner">
                     <div class="header__slaider__item1">
                         <h1 class="header__slaider__title">Лучшие товары<br>в мире татуировок</h1>
                         <h5 class="header__slaider__text">Оборудование и расходники<br>для самых ярких
                             и качественных работ</h5>
                         <a href="catalog.html"><button class="header__slaider__button">Смотреть
                                 каталог</button></a>
-                        <img src="images/bg-head1.jpg">
+                        <picture>
+                            <source media="(max-width: 1000px)" srcset="images/bg-head1-1500">
+                            <source media="(max-width: 1260px)" srcset="images/bg-head1-1260.jpg">
+                            <source media="(max-width: 1500px)" srcset="images/bg-head1-1500.jpg">
+                            <img src="images/bg-head1.jpg">
+                        </picture>
+                        <div class="slaider">
+                            <img class="slaider__icon" src="images/icon-top-slaider.svg" alt="slaider">
+                            <img class="slaider__icon" src="images/icon-slaider-now.png" alt="slaider">
+                            <img class="slaider__icon" src="images/icon-slaider.png" alt="slaider">
+                            <img class="slaider__icon" src="images/icon-slaider.png" alt="slaider">
+                            <img class="slaider__icon" src="images/icon-slaider.png" alt="slaider">
+                            <img class="slaider__icon" src="images/icon-slaider.png" alt="slaider">
+                            <img class="slaider__icon" src="images/icon-bottom-slaider.svg" alt="slaider">
+                        </div>
                     </div>
-                    <div class="header__slaider__item1">
+                    <!-- <div class="header__slaider__item1">
                         <h1 class="header__slaider__title">Как ухаживать за татуировкой?<br></h1>
                         <h5 class="header__slaider__text">Предлагаем вам ознакомиться<br>с полезной информацией в
                             разделе "Помощь"</h5>
@@ -117,7 +132,7 @@
                             CONVENTION<br></h1>
                         <a href="404.html"><button class="header__slaider__button">Подробнее</button></a>
                         <img src="images/bg-head5.jpg">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -1238,6 +1253,8 @@
     <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 
 </html>
